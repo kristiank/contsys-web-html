@@ -1,0 +1,192 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>health record extract</title>
+  </header>
+  <body>
+    <h1>Terviseloo väljavõte</h1>
+    <div>Termin: terviseloo väljavõte (<i>health record extract</i>
+      <a href="https://contsys.org/concept/health_record_extract" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: osaline või täielik terviselugu, mis on välja võetud teabeedastuse eesmärgil (<i>part or all of a health record extracted for the purpose of communication</i>)</div>
+    <div>Valdkond: <a href="../../domain/information">teabehaldus (<i>information</i>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: This International Standard defines one health record extract specialization - the electronic record extract. However, as the content of a health record is not limited to information in electronic format, the content of health record extracts may be in formats other than electronic.<br>
+                 (<i>This International Standard defines one health record extract specialization - the electronic record extract. However, as the content of a health record is not limited to information in electronic format, the content of health record extracts may be in formats other than electronic.</i>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="vähemalt ühe tervishoiu osapoole poolt kindlaks tehtud, patsiendi tervisega seotud asjaolu või sellele patsiendile abi osutamisega seotud asjaolu kirjeldus" href="healthcare&#32;matter">terviseküsimus</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>tähistatakse</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="osaline või täielik terviselugu, mis on välja võetud teabeedastuse eesmärgil" href="health&#32;record&#32;extract">terviseloo väljavõte</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tegevusvolitus, mis annab õiguse edastada terviseloo väljavõtteid" href="mandate&#32;to&#32;export&#32;personal&#32;information">isikliku teabe väljastamise volitus</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>tähendab õigust edastada</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="osaline või täielik terviselugu, mis on välja võetud teabeedastuse eesmärgil" href="health&#32;record&#32;extract">terviseloo väljavõte</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="ühe tervishoiu osapoole poolt teisele tervishoiu osapoolele saadetud taotlus konkreetse terviseteabe saamiseks, mida on vaja patsiendile tervishoiuteenuse osutamiseks" href="healthcare&#32;information&#32;request">terviseteabe päring</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>on teema</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="osaline või täielik terviselugu, mis on välja võetud teabeedastuse eesmärgil" href="health&#32;record&#32;extract">terviseloo väljavõte</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="osaline või täielik terviselugu, mis on välja võetud teabeedastuse eesmärgil" href="health&#32;record&#32;extract">terviseloo väljavõte</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>võetakse</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="patsiendi tervist ja ravi puudutav andmehoidla" href="health&#32;record">terviselugu</a>
+          </td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>health record extract</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>health record extract</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="ainult elektroonilistest terviseloo osadest koosnev terviseloo väljavõte" href="electronic&#32;health&#32;record&#32;extract">elektrooniline terviseloo väljavõte</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="terviseloo väljavõte, mis sisaldab teabe saaja vajadustele vastavat terviseteavet" href="clinical&#32;report">kliiniline teatis</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="terviseloo väljavõte, mis sisaldab kõiki konkreetse probleemi lõimega seonduvaid terviseloo osi" href="health&#32;concern">tervisemure kirjeldus</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>health record extract is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="selline osa terviseloost, mida saab viitamise ja muudatuste jälgimise eesmärgil tuvastada" href="health&#32;record&#32;component">terviseloo osa</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>health record extract is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="health record extract"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+33 [label="terviseküsimus" fontname="Cambria" tooltip="vähemalt ühe tervishoiu osapoole poolt kindlaks tehtud, patsiendi tervisega seotud asjaolu või sellele patsiendile abi osutamisega seotud asjaolu kirjeldus" URL="/concept/term/healthcare matter" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+133 [label="terviseloo väljavõte" fontname="Cambria" tooltip="osaline või täielik terviselugu, mis on välja võetud teabeedastuse eesmärgil" URL="/concept/term/health record extract" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+110 [label="isikliku teabe väljastamise volitus" fontname="Cambria" tooltip="tegevusvolitus, mis annab õiguse edastada terviseloo väljavõtteid" URL="/concept/term/mandate to export personal information" color="#376fa6" style="filled,rounded" fillcolor="#E6EDF4" ]
+126 [label="terviseteabe päring" fontname="Cambria" tooltip="ühe tervishoiu osapoole poolt teisele tervishoiu osapoolele saadetud taotlus konkreetse terviseteabe saamiseks, mida on vaja patsiendile tervishoiuteenuse osutamiseks" URL="/concept/term/healthcare information request" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+129 [label="terviselugu" fontname="Cambria" tooltip="patsiendi tervist ja ravi puudutav andmehoidla" URL="/concept/term/health record" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+125 [label="terviseloo osa" fontname="Cambria" tooltip="selline osa terviseloost, mida saab viitamise ja muudatuste jälgimise eesmärgil tuvastada" URL="/concept/term/health record component" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+121 [label="elektrooniline terviseloo väljavõte" fontname="Cambria" tooltip="ainult elektroonilistest terviseloo osadest koosnev terviseloo väljavõte" URL="/concept/term/electronic health record extract" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+127 [label="kliiniline teatis" fontname="Cambria" tooltip="terviseloo väljavõte, mis sisaldab teabe saaja vajadustele vastavat terviseteavet" URL="/concept/term/clinical report" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+136 [label="tervisemure kirjeldus" fontname="Cambria" tooltip="terviseloo väljavõte, mis sisaldab kõiki konkreetse probleemi lõimega seonduvaid terviseloo osi" URL="/concept/term/health concern" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+33 -> 133 [label="tähistatakse"; fontname="Cambria"]
+110 -> 133 [label="tähendab õigust edastada"; fontname="Cambria"]
+126 -> 133 [label="on teema"; fontname="Cambria"]
+133 -> 129 [label="võetakse"; fontname="Cambria"]
+133 -> 121 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+133 -> 127 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+133 -> 136 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+133 -> 125 [arrowtail="odiamond" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

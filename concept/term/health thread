@@ -1,0 +1,251 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>health thread</title>
+  </header>
+  <body>
+    <h1>Terviselõim</h1>
+    <div>Termin: terviselõim (<i>health thread</i>
+      <a href="https://contsys.org/concept/health_thread" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: vähemalt ühe tervishoiu osapoole määratud sisuline seos terviseküsimuste vahel (<i>defined association between healthcare matters as determined by one or more healthcare actors</i>)</div>
+    <div>Valdkond: <a href="../../domain/matter">asjaolud (<i>matter</i>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: A health thread reconciles a range of healthcare matters reflecting the variety of scopes of healthcare actors, particularly of healthcare providers.<br>
+                 (<i>A health thread reconciles a range of healthcare matters reflecting the variety of scopes of healthcare actors, particularly of healthcare providers.</i>)</div>
+      <div>Märkus 2: A health thread inherently associates the healthcare processes as well as the healthcare activity period elements referring to those healthcare matters.<br>
+                 (<i>A health thread inherently associates the healthcare processes as well as the healthcare activity period elements referring to those healthcare matters.</i>)</div>
+      <div>Märkus 3: A health thread may be established by a team (e.g. a coordination committee).<br>
+                 (<i>A health thread may be established by a team (e.g. a coordination committee).</i>)</div>
+      <div>Märkus 4: A health thread can be built step-by-step, by allowing each healthcare professional to add their perspective into a common health thread.<br>
+                 (<i>A health thread can be built step-by-step, by allowing each healthcare professional to add their perspective into a common health thread.</i>)</div>
+      <div>Märkus 5: Under the responsibility of a designated healthcare actor, a health thread linking several healthcare matters can describe an episodes of care bundle, for instance, a partial or comprehensive synthesis of healthcare actor related episodes of care.<br>
+                 (<i>Under the responsibility of a designated healthcare actor, a health thread linking several healthcare matters can describe an episodes of care bundle, for instance, a partial or comprehensive synthesis of healthcare actor related episodes of care.</i>)</div>
+      <div>Märkus 6: A collective decision (before, during or after the healthcare interventions) may define a health thread and so the idea of the 'episode' accepted by all the healthcare professionals involved.<br>
+                 (<i>A collective decision (before, during or after the healthcare interventions) may define a health thread and so the idea of the 'episode' accepted by all the healthcare professionals involved.</i>)</div>
+      <div>Märkus 7: Two health conditions may sometimes only be recognized as belonging to the same health thread late in the process of care. Conversely, two health conditions thought initially to belong to the same health thread may need to be separated later.<br>
+                 (<i>Two health conditions may sometimes only be recognized as belonging to the same health thread late in the process of care. Conversely, two health conditions thought initially to belong to the same health thread may need to be separated later.</i>)</div>
+      <div>Märkus 8: Since a health thread links any number of healthcare matters; it also may link health threads linking other health issues. Hence, a health thread may be considered an aggregation of health issues and/or health threads.<br>
+                 (<i>Since a health thread links any number of healthcare matters; it also may link health threads linking other health issues. Hence, a health thread may be considered an aggregation of health issues and/or health threads.</i>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoius osalev organisatsioon või isik" href="healthcare&#32;actor">tervishoiu osapool</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>määratleb</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="vähemalt ühe tervishoiu osapoole määratud sisuline seos terviseküsimuste vahel" href="health&#32;thread">terviselõim</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="vähemalt ühe tervishoiu osapoole määratud sisuline seos terviseküsimuste vahel" href="health&#32;thread">terviselõim</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>piiritleb</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviseloo väljavõte, mis sisaldab kõiki konkreetse probleemi lõimega seonduvaid terviseloo osi" href="health&#32;concern">tervisemure kirjeldus</a>
+          </td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="vähemalt ühe tervishoiu osapoole määratud sisuline seos terviseküsimuste vahel" href="health&#32;thread">terviselõim</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>ühendab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="vähemalt ühe tervishoiu osapoole poolt kindlaks tehtud, patsiendi tervisega seotud asjaolu või sellele patsiendile abi osutamisega seotud asjaolu kirjeldus" href="healthcare&#32;matter">terviseküsimus</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="vähemalt ühe tervishoiu osapoole määratud sisuline seos terviseküsimuste vahel" href="health&#32;thread">terviselõim</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>piiritleb</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="ühte terviselõime koondatud raviepisoodid" href="episodes&#32;of&#32;care&#32;bundle">raviepisoodide kogum</a>
+          </td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tegevusvolitus, mis annab õiguse ja kohustuse jälgida ja koordineerida terviselõimede kaudu terviseküsimustega seotud ravivolitustes kirjeldatud ravi osutamist" href="continuity&#32;facilitator&#32;mandate">ravi järjepidevuse korraldamise volitus</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>on </td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="vähemalt ühe tervishoiu osapoole määratud sisuline seos terviseküsimuste vahel" href="health&#32;thread">terviselõim</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="vähemalt ühe tervishoiu osapoole määratud sisuline seos terviseküsimuste vahel" href="health&#32;thread">terviselõim</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>ühendab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="vähemalt ühe tervishoiu osapoole määratud sisuline seos terviseküsimuste vahel" href="health&#32;thread">terviselõim</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan">raviplaan</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>käsitleb</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="vähemalt ühe tervishoiu osapoole määratud sisuline seos terviseküsimuste vahel" href="health&#32;thread">terviselõim</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>health thread</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>health thread</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="terviselõim, mis sisaldab konkreetse kliinilise protsessiga seonduvaid terviseküsimusi" href="clinical&#32;process&#32;interest">kliinilise protsessi lõim</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="terviselõim, mis seob terviseprobleemide kogumi" href="health&#32;problem&#32;list">terviseprobleemide nimekiri</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="terviselõim, mis algab algse terviseolekuga ja näitab tervishoiuprotsessi jooksul toimuvat terviseseisundite muutust" href="health&#32;condition&#32;evolution">terviseseisundi muutus</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>health thread is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>health thread is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="health thread"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+7 [label="tervishoiu osapool" fontname="Cambria" tooltip="tervishoius osalev organisatsioon või isik" URL="/concept/term/healthcare actor" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+16 [label="terviselõim" fontname="Cambria" tooltip="vähemalt ühe tervishoiu osapoole määratud sisuline seos terviseküsimuste vahel" URL="/concept/term/health thread" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+136 [label="tervisemure kirjeldus" fontname="Cambria" tooltip="terviseloo väljavõte, mis sisaldab kõiki konkreetse probleemi lõimega seonduvaid terviseloo osi" URL="/concept/term/health concern" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+33 [label="terviseküsimus" fontname="Cambria" tooltip="vähemalt ühe tervishoiu osapoole poolt kindlaks tehtud, patsiendi tervisega seotud asjaolu või sellele patsiendile abi osutamisega seotud asjaolu kirjeldus" URL="/concept/term/healthcare matter" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+83 [label="raviepisoodide kogum" fontname="Cambria" tooltip="ühte terviselõime koondatud raviepisoodid" URL="/concept/term/episodes of care bundle" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+102 [label="ravi järjepidevuse korraldamise volitus" fontname="Cambria" tooltip="tegevusvolitus, mis annab õiguse ja kohustuse jälgida ja koordineerida terviselõimede kaudu terviseküsimustega seotud ravivolitustes kirjeldatud ravi osutamist" URL="/concept/term/continuity facilitator mandate" color="#376fa6" style="filled,rounded" fillcolor="#E6EDF4" ]
+72 [label="raviplaan" fontname="Cambria" tooltip="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" URL="/concept/term/care plan" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+26 [label="kliinilise protsessi lõim" fontname="Cambria" tooltip="terviselõim, mis sisaldab konkreetse kliinilise protsessiga seonduvaid terviseküsimusi" URL="/concept/term/clinical process interest" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+27 [label="terviseprobleemide nimekiri" fontname="Cambria" tooltip="terviselõim, mis seob terviseprobleemide kogumi" URL="/concept/term/health problem list" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+28 [label="terviseseisundi muutus" fontname="Cambria" tooltip="terviselõim, mis algab algse terviseolekuga ja näitab tervishoiuprotsessi jooksul toimuvat terviseseisundite muutust" URL="/concept/term/health condition evolution" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+7 -> 16 [label="määratleb"; fontname="Cambria"]
+16 -> 136 [label="piiritleb"; fontname="Cambria"]
+16 -> 33 [label="ühendab"; fontname="Cambria"]
+16 -> 83 [label="piiritleb"; fontname="Cambria"]
+102 -> 16 [label="on "; fontname="Cambria"]
+16 -> 16 [label="ühendab"; fontname="Cambria"]
+72 -> 16 [label="käsitleb"; fontname="Cambria"]
+16 -> 26 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+16 -> 27 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+16 -> 28 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

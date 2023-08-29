@@ -1,0 +1,108 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>base component</title>
+  </header>
+  <body>
+    <h1>Base component</h1>
+    <div>Termin: base component (<i>base component</i>
+      <a href="https://contsys.org/concept/base_component" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: abstract class that include the properties common for all revisable classes included in EHR extract (<i>abstract class that include the properties common for all revisable classes included in EHR extract</i>)</div>
+    <div>Valdkond: <a href="base&#32;component"> (<i></i>)</a>
+    </div>
+    <div></div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>base component</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>base component</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="terviseloo osa, mis sisaldab ainult elektroonilises vormis teavet" href="electronic&#32;health&#32;record&#32;component">elektrooniline terviseloo osa</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="base component that describes an association from information in an EHR extract to other information within that EHR extract" href="link">link</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="base component documenting the details of an attestation of a set of electronic health record components" href="attestation&#32;information">attestation information</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>base component is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>base component is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="base component"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+217 [label="base component" fontname="Cambria" tooltip="abstract class that include the properties common for all revisable classes included in EHR extract" URL="/concept/term/base component" color="#000000" ]
+128 [label="elektrooniline terviseloo osa" fontname="Cambria" tooltip="terviseloo osa, mis sisaldab ainult elektroonilises vormis teavet" URL="/concept/term/electronic health record component" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+199 [label="link" fontname="Cambria" tooltip="base component that describes an association from information in an EHR extract to other information within that EHR extract" URL="/concept/term/link" color="#000000" ]
+219 [label="attestation information" fontname="Cambria" tooltip="base component documenting the details of an attestation of a set of electronic health record components" URL="/concept/term/attestation information" color="#000000" ]
+217 -> 128 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+217 -> 199 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+217 -> 219 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

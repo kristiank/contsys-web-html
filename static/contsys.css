@@ -1,0 +1,35 @@
+.graph-placeholder {
+  border: solid 1px lightgray;
+  cursor: crosshair;
+}
+
+term, .term {
+  font-style: italic;
+}
+
+td.editable {
+  background-color: lightred;
+}
+
+table {
+  font-family: Sans-Serif;
+  border-collapse: collapse;
+  border: solid 1px black;
+  margin: 1em;
+  margin-top: 1.5em;
+}
+
+thead {
+  background-color: lightgray;
+  cursor: s-resize;
+}
+tbody {
+  text-align: center;
+}
+
+td {
+  min-width: 3.5em;
+  padding: .35em;
+  border: solid 1px gray;
+  margin: 0px;
+}

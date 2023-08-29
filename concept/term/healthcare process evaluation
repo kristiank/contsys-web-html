@@ -1,0 +1,118 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>healthcare process evaluation</title>
+  </header>
+  <body>
+    <h1>Tervishoiuprotsessi hindamine</h1>
+    <div>Termin: tervishoiuprotsessi hindamine (<i>healthcare process evaluation</i>
+      <a href="https://contsys.org/concept/healthcare_process_evaluation" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: tervishoiutegevuse hindamine, mille käigus hinnatakse süstemaatiliselt tervishoiuprotsesside nõuetele vastavust (<i>healthcare evaluation where healthcare processes are systematically assessed against requirements</i>)</div>
+    <div>Valdkond: <a href="../../domain/activity">tegevused (<i>activity</i>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: The outputs of clinical processes are evaluated in a clinical process outcome evaluation.<br>
+                 (<i>The outputs of clinical processes are evaluated in a clinical process outcome evaluation.</i>)</div>
+      <div>Märkus 2: Requirements are defined as a combination of needs and expectations that are stated, generally implied or obligatory. The needs can be represented by, for example, target conditions, goals for resource consumption, compliance to guidelines, etc. The expectations can be represented by the perceptions of the outcomes from each of the involved healthcare actor’s perspective (i.e. subject of care and healthcare professionals).<br>
+                 (<i>Requirements are defined as a combination of needs and expectations that are stated, generally implied or obligatory. The needs can be represented by, for example, target conditions, goals for resource consumption, compliance to guidelines, etc. The expectations can be represented by the perceptions of the outcomes from each of the involved healthcare actor’s perspective (i.e. subject of care and healthcare professionals).</i>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiutegevuse hindamine, mille käigus hinnatakse süstemaatiliselt tervishoiuprotsesside nõuetele vastavust" href="healthcare&#32;process&#32;evaluation">tervishoiuprotsessi hindamine</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>hindab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="omavahel seotud või vastastikku mõjutavad tervishoiutegevused, mis muudavad sisendid väljunditeks" href="healthcare&#32;process">tervishoiuprotsess</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare process evaluation</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="tervishoiutoiming, mille käigus antakse hinnang mis tahes muu tervishoiutegevuse kohta" href="healthcare&#32;evaluation">tervishoiutegevuse hindamine</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare process evaluation</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>healthcare process evaluation is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>healthcare process evaluation is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="healthcare process evaluation"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+42 [label="tervishoiuprotsessi hindamine" fontname="Cambria" tooltip="tervishoiutegevuse hindamine, mille käigus hinnatakse süstemaatiliselt tervishoiuprotsesside nõuetele vastavust" URL="/concept/term/healthcare process evaluation" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+63 [label="tervishoiuprotsess" fontname="Cambria" tooltip="omavahel seotud või vastastikku mõjutavad tervishoiutegevused, mis muudavad sisendid väljunditeks" URL="/concept/term/healthcare process" color="#b43232" style="filled,rounded" fillcolor="#F6E5E5" ]
+52 [label="tervishoiutegevuse hindamine" fontname="Cambria" tooltip="tervishoiutoiming, mille käigus antakse hinnang mis tahes muu tervishoiutegevuse kohta" URL="/concept/term/healthcare evaluation" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+42 -> 63 [label="hindab"; fontname="Cambria"]
+52 -> 42 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

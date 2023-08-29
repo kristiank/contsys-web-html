@@ -1,0 +1,164 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>healthcare commitment</title>
+  </header>
+  <body>
+    <h1>Tervishoiuteenuse osutamise kohustus</h1>
+    <div>Termin: tervishoiuteenuse osutamise kohustus (<i>healthcare commitment</i>
+      <a href="https://contsys.org/concept/healthcare_commitment" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: tegevusvolituse aktsepteerimine tervishoiu osapoole poolt, kellele see on antud (<i>acceptance of a healthcare mandate by the healthcare actor to whom it is assigned</i>)</div>
+    <div>Valdkond: <a href="../../domain/responsibility">vastutus (<i>responsibility</i>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: The healthcare commitment is the promise by the healthcare actor to perform healthcare activities. This also means that the healthcare provider accepts and confirms the pending healthcare mandate issued through the proposed care plan.<br>
+                 (<i>The healthcare commitment is the promise by the healthcare actor to perform healthcare activities. This also means that the healthcare provider accepts and confirms the pending healthcare mandate issued through the proposed care plan.</i>)</div>
+      <div>Märkus 2: Implicitly, a healthcare commitment results from a dialogue with the subject of care or someone on behalf of the subject of care within a healthcare needs assessment<br>
+                 (<i>Implicitly, a healthcare commitment results from a dialogue with the subject of care or someone on behalf of the subject of care within a healthcare needs assessment</i>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiu osapool, kellele saab määrata üht või enamat ravivolitust" href="healthcare&#32;provider">tervishoiuteenuse osutaja</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>avaldab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tegevusvolituse aktsepteerimine tervishoiu osapoole poolt, kellele see on antud" href="healthcare&#32;commitment">tervishoiuteenuse osutamise kohustus</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tegevusvolituse aktsepteerimine tervishoiu osapoole poolt, kellele see on antud" href="healthcare&#32;commitment">tervishoiuteenuse osutamise kohustus</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>on seotud sooritamisega </td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" href="healthcare&#32;activity">tervishoiutegevus</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="kohustusel ja teadlikul nõusolekul või seadusega antud volitusel põhinev mandaat, mis määratleb ühe tervishoiu osapoole õigused ja kohustused konkreetse patsiendi jaoks tehtavates tervishoiuprotsessides" href="healthcare&#32;mandate">tegevusvolitus tervishoius</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>nõuab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tegevusvolituse aktsepteerimine tervishoiu osapoole poolt, kellele see on antud" href="healthcare&#32;commitment">tervishoiuteenuse osutamise kohustus</a>
+          </td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="ravitaotlus, kus tervishoiutöötaja palub tervishoiuteenuse osutajal kinnitada tervishoiuteenuse osutamise kohustust ravivolituse ajaks" href="referral">saatekiri</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>eeldab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tegevusvolituse aktsepteerimine tervishoiu osapoole poolt, kellele see on antud" href="healthcare&#32;commitment">tervishoiuteenuse osutamise kohustus</a>
+          </td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare commitment</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare commitment</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>healthcare commitment is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>healthcare commitment is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="healthcare commitment"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+8 [label="tervishoiuteenuse osutaja" fontname="Cambria" tooltip="tervishoiu osapool, kellele saab määrata üht või enamat ravivolitust" URL="/concept/term/healthcare provider" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+111 [label="tervishoiuteenuse osutamise kohustus" fontname="Cambria" tooltip="tegevusvolituse aktsepteerimine tervishoiu osapoole poolt, kellele see on antud" URL="/concept/term/healthcare commitment" color="#376fa6" style="filled,rounded" fillcolor="#E6EDF4" ]
+39 [label="tervishoiutegevus" fontname="Cambria" tooltip="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" URL="/concept/term/healthcare activity" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+100 [label="tegevusvolitus tervishoius" fontname="Cambria" tooltip="kohustusel ja teadlikul nõusolekul või seadusega antud volitusel põhinev mandaat, mis määratleb ühe tervishoiu osapoole õigused ja kohustused konkreetse patsiendi jaoks tehtavates tervishoiuprotsessides" URL="/concept/term/healthcare mandate" color="#376fa6" style="filled,rounded" fillcolor="#E6EDF4" ]
+118 [label="saatekiri" fontname="Cambria" tooltip="ravitaotlus, kus tervishoiutöötaja palub tervishoiuteenuse osutajal kinnitada tervishoiuteenuse osutamise kohustust ravivolituse ajaks" URL="/concept/term/referral" color="#376fa6" style="filled,rounded" fillcolor="#E6EDF4" ]
+8 -> 111 [label="avaldab"; fontname="Cambria"]
+111 -> 39 [label="on seotud sooritamisega "; fontname="Cambria"]
+100 -> 111 [label="nõuab"; fontname="Cambria"]
+118 -> 111 [label="eeldab"; fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

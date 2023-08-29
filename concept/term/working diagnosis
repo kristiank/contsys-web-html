@@ -1,0 +1,143 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>working diagnosis</title>
+  </header>
+  <body>
+    <h1>Töödiagnoos</h1>
+    <div>Termin: töödiagnoos (<i>working diagnosis</i>
+      <a href="https://contsys.org/concept/working_diagnosis" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: arvesse võetav seisund, mille vähemalt üks tervishoiutöötaja on tuvastanud ja mis on kõige rohkem kooskõlas praeguste teadaolevate täheldatud seisunditega (<i>considered condition that one or more healthcare professionals have determined to be the most consistent with the currently known observed conditions</i>)</div>
+    <div>Valdkond: <a href="../../domain/matter">asjaolud (<i>matter</i>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: A working diagnosis is used as a label for the considered condition that one or more healthcare professionals assess as the most probable health condition and that could be concluded after further observations. The basis for such assessments is the already observed conditions.<br>
+                 (<i>A working diagnosis is used as a label for the considered condition that one or more healthcare professionals assess as the most probable health condition and that could be concluded after further observations. The basis for such assessments is the already observed conditions.</i>)</div>
+      <div>Märkus 2: Different healthcare professionals may make different interpretations and assessments of the observed conditions and thereby come to different conclusions and different working diagnosis.<br>
+                 (<i>Different healthcare professionals may make different interpretations and assessments of the observed conditions and thereby come to different conclusions and different working diagnosis.</i>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="meditsiinipersonali hulka kuuluv isik, kellel on antud jurisdiktsioonis tervishoiutöötajana tegutsemise õigus" href="healthcare&#32;professional">tervishoiutöötaja</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>on määranud</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="arvesse võetav seisund, mille vähemalt üks tervishoiutöötaja on tuvastanud ja mis on kõige rohkem kooskõlas praeguste teadaolevate täheldatud seisunditega" href="working&#32;diagnosis">töödiagnoos</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="arvesse võetav seisund, mille vähemalt üks tervishoiutöötaja on tuvastanud ja mis on kõige rohkem kooskõlas praeguste teadaolevate täheldatud seisunditega" href="working&#32;diagnosis">töödiagnoos</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>on kooskõlas</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviseseisund, mida on täheldanud tervishoiu osapool" href="observed&#32;condition">täheldatud seisund</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>working diagnosis</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="täheldatud seisund, mida tervishoiutöötaja on hinnanud seoses terviseoleku tekke, kulu, raskuse või mõjuga" href="professionally&#32;assessed&#32;condition">tervishoiutöötaja hinnatud seisund</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="võimalik seisund, mida tervishoiu osapool vähemalt ühe täheldatud seisundi põhjal arvesse võtab" href="considered&#32;condition">arvesse võetav seisund</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>working diagnosis</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>working diagnosis is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>working diagnosis is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="working diagnosis"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+1 [label="tervishoiutöötaja" fontname="Cambria" tooltip="meditsiinipersonali hulka kuuluv isik, kellel on antud jurisdiktsioonis tervishoiutöötajana tegutsemise õigus" URL="/concept/term/healthcare professional" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+34 [label="töödiagnoos" fontname="Cambria" tooltip="arvesse võetav seisund, mille vähemalt üks tervishoiutöötaja on tuvastanud ja mis on kõige rohkem kooskõlas praeguste teadaolevate täheldatud seisunditega" URL="/concept/term/working diagnosis" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+21 [label="täheldatud seisund" fontname="Cambria" tooltip="terviseseisund, mida on täheldanud tervishoiu osapool" URL="/concept/term/observed condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+19 [label="tervishoiutöötaja hinnatud seisund" fontname="Cambria" tooltip="täheldatud seisund, mida tervishoiutöötaja on hinnanud seoses terviseoleku tekke, kulu, raskuse või mõjuga" URL="/concept/term/professionally assessed condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+25 [label="arvesse võetav seisund" fontname="Cambria" tooltip="võimalik seisund, mida tervishoiu osapool vähemalt ühe täheldatud seisundi põhjal arvesse võtab" URL="/concept/term/considered condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+1 -> 34 [label="on määranud"; fontname="Cambria"]
+34 -> 21 [label="on kooskõlas"; fontname="Cambria"]
+19 -> 34 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+25 -> 34 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

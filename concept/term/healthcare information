@@ -1,0 +1,101 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>healthcare information</title>
+  </header>
+  <body>
+    <h1>Terviseteave</h1>
+    <div>Termin: terviseteave (<i>healthcare information</i>
+      <a href="https://contsys.org/concept/healthcare_information" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: isiku (3.3.4) kohta käiv informatsioon (3.9.5), mis on tema tervise hoidmise (3.1.1) seisukohalt oluline (<i>information about a person, relevant to his or her healthcare</i>)</div>
+    <div>Valdkond: <a href="../../domain/terms&#32;and&#32;definitions">terminid ja määratlused (<i>terms and definitions</i>)</a>
+    </div>
+    <div></div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare information</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare information</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="terviseteave, mida võidakse importida erialasesse terviseloosse, kui tervishoiutöötaja on kinnitanud, et teave on erialase terviseloo jaoks kliiniliselt oluline" href="healthcare&#32;information&#32;for&#32;import">terviseandmed importimiseks</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="terviseteave, mille asjakohasust ei ole tervishoiutöötaja hinnanud ega kinnitanud" href="non-ratified&#32;healthcare&#32;information">kinnitamata terviseandmed</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>healthcare information is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>healthcare information is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="healthcare information"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+168 [label="terviseteave" fontname="Cambria" tooltip="isiku (3.3.4) kohta käiv informatsioon (3.9.5), mis on tema tervise hoidmise (3.1.1) seisukohalt oluline" URL="/concept/term/healthcare information" color="#000000" ]
+122 [label="terviseandmed importimiseks" fontname="Cambria" tooltip="terviseteave, mida võidakse importida erialasesse terviseloosse, kui tervishoiutöötaja on kinnitanud, et teave on erialase terviseloo jaoks kliiniliselt oluline" URL="/concept/term/healthcare information for import" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+124 [label="kinnitamata terviseandmed" fontname="Cambria" tooltip="terviseteave, mille asjakohasust ei ole tervishoiutöötaja hinnanud ega kinnitanud" URL="/concept/term/non-ratified healthcare information" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+168 -> 122 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+168 -> 124 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

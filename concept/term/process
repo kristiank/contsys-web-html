@@ -1,0 +1,94 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>process</title>
+  </header>
+  <body>
+    <h1>Protsess</h1>
+    <div>Termin: protsess (<i>process</i>
+      <a href="https://contsys.org/concept/process" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: omavahel seotud või vastastikku toimivate tegevuste kogum, mis kasutab sisendeid kavatsetud tulemuste saavutamiseks (<i>set of interrelated or interacting activities that use inputs to deliver an intended result</i>)</div>
+    <div>Valdkond: <a href="../../domain/terms&#32;and&#32;definitions">terminid ja määratlused (<i>terms and definitions</i>)</a>
+    </div>
+    <div></div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>process</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>process</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="omavahel seotud või vastastikku mõjutavad tervishoiutegevused, mis muudavad sisendid väljunditeks" href="healthcare&#32;process">tervishoiuprotsess</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>process is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>process is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="process"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+161 [label="protsess" fontname="Cambria" tooltip="omavahel seotud või vastastikku toimivate tegevuste kogum, mis kasutab sisendeid kavatsetud tulemuste saavutamiseks" URL="/concept/term/process" color="#000000" ]
+63 [label="tervishoiuprotsess" fontname="Cambria" tooltip="omavahel seotud või vastastikku mõjutavad tervishoiutegevused, mis muudavad sisendid väljunditeks" URL="/concept/term/healthcare process" color="#b43232" style="filled,rounded" fillcolor="#F6E5E5" ]
+161 -> 63 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

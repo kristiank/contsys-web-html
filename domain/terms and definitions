@@ -1,0 +1,144 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../static/contsys.css">
+    <title>Mõiste valdkond „Terminid ja määratlused“</title>
+  </header>
+  <body>
+    <h1>Mõiste valdkond „Terminid ja määratlused“ (<i>terms and definitions</i>)</h1>
+    <ul>
+      <li>
+        <a class="term" title="tuvastatav andmete (3.9.1) hoidmise koht" href="../concept/term/data&#32;repository">andmehoidla</a>
+        <i>tuvastatav andmete (3.9.1) hoidmise koht</i>
+      </li>
+      <li>
+        <a class="term" title="nähtus, mis ei ole protsessi (3.6.1) normaalse kulu osa, kuid võib protsessi mõjutada" href="../concept/term/unintended&#32;event">ettekavatsemata sündmus</a>
+        <i>nähtus, mis ei ole protsessi (3.6.1) normaalse kulu osa, kuid võib protsessi mõjutada</i>
+      </li>
+      <li>
+        <a class="term" title="inimene kui indiviid" href="../concept/term/person">isik</a>
+        <i>inimene kui indiviid</i>
+      </li>
+      <li>
+        <a class="term" title="isiku (3.3.4) roll (3.3.5)" href="../concept/term/person&#32;role">isiku roll</a>
+        <i>isiku (3.3.4) roll (3.3.5)</i>
+      </li>
+      <li>
+        <a class="term" title="ese, mille peale andmed on talletatud (nt magnetketas)" href="../concept/term/medium">kandja</a>
+        <i>ese, mille peale andmed on talletatud (nt magnetketas)</i>
+      </li>
+      <li>
+        <a class="term" title="instrument, aparaat, tarvik, masin, seade, implantaat, in vitro reagent või kalibraator, tarkvara, materjal või muu sarnane või seotud ese, mis on tootja poolt ette nähtud kasutamiseks üksi või koos, inimese heaks ühel või mitmel spetsiifilisel eesmärgil [jätkub]" href="../concept/term/medical&#32;device">meditsiiniseade</a>
+        <i>instrument, aparaat, tarvik, masin, seade, implantaat, in vitro reagent või kalibraator, tarkvara, materjal või muu sarnane või seotud ese, mis on tootja poolt ette nähtud kasutamiseks üksi või koos, inimese heaks ühel või mitmel spetsiifilisel eesmärgil [jätkub]</i>
+      </li>
+      <li>
+        <a class="term" title="identifitseeritav ühendus, mille raames isik (3.3.4) või isikud tegutsevad või on määratud tegutsema mõne eesmärgi nimel" href="../concept/term/organization">organisatsioon</a>
+        <i>identifitseeritav ühendus, mille raames isik (3.3.4) või isikud tegutsevad või on määratud tegutsema mõne eesmärgi nimel</i>
+      </li>
+      <li>
+        <a class="term" title="role undertaken by an organization" href="../concept/term/organizational&#32;role">organizational role</a>
+        <i>role undertaken by an organization</i>
+      </li>
+      <li>
+        <a class="term" title="omavahel seotud või vastastikku toimivate tegevuste kogum, mis kasutab sisendeid kavatsetud tulemuste saavutamiseks" href="../concept/term/process">protsess</a>
+        <i>omavahel seotud või vastastikku toimivate tegevuste kogum, mis kasutab sisendeid kavatsetud tulemuste saavutamiseks</i>
+      </li>
+      <li>
+        <a class="term" title="protsessi (3.6.1) käigus kasutatav ja tarbitav vara" href="../concept/term/resource">ressurss</a>
+        <i>protsessi (3.6.1) käigus kasutatav ja tarbitav vara</i>
+      </li>
+      <li>
+        <a class="term" title="funktsioon või positsioon" href="../concept/term/role">roll</a>
+        <i>funktsioon või positsioon</i>
+      </li>
+      <li>
+        <a class="term" title="isiku (3.3.4) kohta käiv informatsioon (3.9.5), mis on tema tervise hoidmise (3.1.1) seisukohalt oluline" href="../concept/term/healthcare&#32;information">terviseteave</a>
+        <i>isiku (3.3.4) kohta käiv informatsioon (3.9.5), mis on tema tervise hoidmise (3.1.1) seisukohalt oluline</i>
+      </li>
+      <li>
+        <a class="term" title="isiku tervist puudutavad tegevused, teenused, juhtimine või tarbed" href="../concept/term/healthcare">tervishoid</a>
+        <i>isiku tervist puudutavad tegevused, teenused, juhtimine või tarbed</i>
+      </li>
+      <li>
+        <a class="term" title="tõhus, tulemuslik ja eetiline tervishoid, mida viiakse ellu aja jooksul erinevate tervishoiu osapoolte omavahelise suhtluse, informatsiooni (3.9.5) integreerimise, koordineerimise ja jagamise kaudu" href="../concept/term/continuity&#32;of&#32;care">tervishoiu ja arstiabi järjepidevus</a>
+        <i>tõhus, tulemuslik ja eetiline tervishoid, mida viiakse ellu aja jooksul erinevate tervishoiu osapoolte omavahelise suhtluse, informatsiooni (3.9.5) integreerimise, koordineerimise ja jagamise kaudu</i>
+      </li>
+    </ul>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        label="Valdkond „terminid ja määratlused“"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+3 [label="patsient" fontname="Cambria" tooltip="tervishoiu osapool isiku rollis; keegi, kes tahab saada, saab või on saanud tervishoiusüsteemis teenust" URL="/concept/term/subject of care" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+139 [label="tervishoid" fontname="Cambria" tooltip="isiku tervist puudutavad tegevused, teenused, juhtimine või tarbed" URL="/concept/term/healthcare" color="#000000" ]
+7 [label="tervishoiu osapool" fontname="Cambria" tooltip="tervishoius osalev organisatsioon või isik" URL="/concept/term/healthcare actor" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+8 [label="tervishoiuteenuse osutaja" fontname="Cambria" tooltip="tervishoiu osapool, kellele saab määrata üht või enamat ravivolitust" URL="/concept/term/healthcare provider" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+129 [label="terviselugu" fontname="Cambria" tooltip="patsiendi tervist ja ravi puudutav andmehoidla" URL="/concept/term/health record" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+137 [label="kandja" fontname="Cambria" tooltip="ese, mille peale andmed on talletatud (nt magnetketas)" URL="/concept/term/medium" color="#000000" ]
+152 [label="roll" fontname="Cambria" tooltip="funktsioon või positsioon" URL="/concept/term/role" color="#000000" ]
+10 [label="tervishoiuorganisatsioon" fontname="Cambria" tooltip="tervishoiuteenuse osutaja, millel on organisatsiooni roll" URL="/concept/term/healthcare organization" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+4 [label="tervishoiu tugiorganisatsioon" fontname="Cambria" tooltip="tervishoiu kolmas osapool, millel on organisatsiooni roll" URL="/concept/term/healthcare supporting organization" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+11 [label="meditsiinipersonal" fontname="Cambria" tooltip="isiku rollis olev tervishoiu osapool tervishoiuorganisatsioonis" URL="/concept/term/healthcare personnel" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+13 [label="lähedane isik" fontname="Cambria" tooltip="isiku roll; keegi, kes on patsiendi lähim elusolev sugulane või kellega tal on lähedane suhe" URL="/concept/term/next of kin" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+14 [label="patsiendi esindaja" fontname="Cambria" tooltip="tervishoiu kolmas osapool, kellel on isiku roll koos õigusega otsustada patsiendi eest" URL="/concept/term/subject of care proxy" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+2 [label="muu abiosutaja" fontname="Cambria" tooltip="tervishoiu kolmas osapool, kellel on isiku roll" URL="/concept/term/other carer" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+151 [label="isiku roll" fontname="Cambria" tooltip="isiku (3.3.4) roll (3.3.5)" URL="/concept/term/person role" color="#000000" ]
+5 [label="organizational role" fontname="Cambria" tooltip="role undertaken by an organization" URL="/concept/term/organizational role" color="#000000" ]
+65 [label="tüsistus" fontname="Cambria" tooltip="tervishoiuprotsessidele negatiivset mõju avaldav ettekavatsemata sündmus" URL="/concept/term/adverse event" color="#b43232" style="filled,rounded" fillcolor="#F6E5E5" ]
+63 [label="tervishoiuprotsess" fontname="Cambria" tooltip="omavahel seotud või vastastikku mõjutavad tervishoiutegevused, mis muudavad sisendid väljunditeks" URL="/concept/term/healthcare process" color="#b43232" style="filled,rounded" fillcolor="#F6E5E5" ]
+131 [label="jagatav andmehoidla" fontname="Cambria" tooltip="ainult elektroonilisi terviselugude väljavõtteid sisaldav andmehoidla, mis on tervishoiu osapoole järelevalve all ning kuhu pääsevad ligi nõudekohaselt volitatud tervishoiu osapooled sõltumata nende organisatsioonilisest kuuluvusest" URL="/concept/term/sharable data repository" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+122 [label="terviseandmed importimiseks" fontname="Cambria" tooltip="terviseteave, mida võidakse importida erialasesse terviseloosse, kui tervishoiutöötaja on kinnitanud, et teave on erialase terviseloo jaoks kliiniliselt oluline" URL="/concept/term/healthcare information for import" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+124 [label="kinnitamata terviseandmed" fontname="Cambria" tooltip="terviseteave, mille asjakohasust ei ole tervishoiutöötaja hinnanud ega kinnitanud" URL="/concept/term/non-ratified healthcare information" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+56 [label="tervishoiuressurss" fontname="Cambria" tooltip="tervishoiutegevuste sooritamiseks vajalik ressurss" URL="/concept/term/healthcare resource" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+59 [label="automaatne meditsiiniseade" fontname="Cambria" tooltip="meditsiiniseade, millega saab tervishoiutegevusi sooritada automaatselt" URL="/concept/term/automatic medical device" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+61 [label="tervishoiu rahalised vahendid" fontname="Cambria" tooltip="tervishoiuteenuse osutamise eest maksmiseks või teenuste hüvitamiseks ettenähtud ressurss" URL="/concept/term/healthcare funds" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+138 [label="tervishoiu ja arstiabi järjepidevus" fontname="Cambria" tooltip="tõhus, tulemuslik ja eetiline tervishoid, mida viiakse ellu aja jooksul erinevate tervishoiu osapoolte omavahelise suhtluse, informatsiooni (3.9.5) integreerimise, koordineerimise ja jagamise kaudu" URL="/concept/term/continuity of care" color="#000000" ]
+140 [label="isik" fontname="Cambria" tooltip="inimene kui indiviid" URL="/concept/term/person" color="#000000" ]
+149 [label="organisatsioon" fontname="Cambria" tooltip="identifitseeritav ühendus, mille raames isik (3.3.4) või isikud tegutsevad või on määratud tegutsema mõne eesmärgi nimel" URL="/concept/term/organization" color="#000000" ]
+160 [label="ettekavatsemata sündmus" fontname="Cambria" tooltip="nähtus, mis ei ole protsessi (3.6.1) normaalse kulu osa, kuid võib protsessi mõjutada" URL="/concept/term/unintended event" color="#000000" ]
+161 [label="protsess" fontname="Cambria" tooltip="omavahel seotud või vastastikku toimivate tegevuste kogum, mis kasutab sisendeid kavatsetud tulemuste saavutamiseks" URL="/concept/term/process" color="#000000" ]
+167 [label="andmehoidla" fontname="Cambria" tooltip="tuvastatav andmete (3.9.1) hoidmise koht" URL="/concept/term/data repository" color="#000000" ]
+168 [label="terviseteave" fontname="Cambria" tooltip="isiku (3.3.4) kohta käiv informatsioon (3.9.5), mis on tema tervise hoidmise (3.1.1) seisukohalt oluline" URL="/concept/term/healthcare information" color="#000000" ]
+175 [label="meditsiiniseade" fontname="Cambria" tooltip="instrument, aparaat, tarvik, masin, seade, implantaat, in vitro reagent või kalibraator, tarkvara, materjal või muu sarnane või seotud ese, mis on tootja poolt ette nähtud kasutamiseks üksi või koos, inimese heaks ühel või mitmel spetsiifilisel eesmärgil [jätkub]" URL="/concept/term/medical device" color="#000000" ]
+177 [label="ressurss" fontname="Cambria" tooltip="protsessi (3.6.1) käigus kasutatav ja tarbitav vara" URL="/concept/term/resource" color="#000000" ]
+3 -> 139 [label="tahab saada, saab või on saanud"; fontname="Cambria"]
+7 -> 139 [label="osaleb"; fontname="Cambria"]
+8 -> 139 [label="tagab"; fontname="Cambria"]
+129 -> 137 [label="talletatakse "; fontname="Cambria"]
+152 -> 5 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+152 -> 151 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+56 -> 175 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+5 -> 4 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+5 -> 10 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+151 -> 2 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+151 -> 3 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+151 -> 11 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+151 -> 13 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+151 -> 14 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+160 -> 65 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+161 -> 63 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+167 -> 129 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+167 -> 131 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+168 -> 122 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+168 -> 124 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+175 -> 59 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+177 -> 56 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+177 -> 61 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

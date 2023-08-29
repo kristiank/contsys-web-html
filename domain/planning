@@ -1,0 +1,141 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../static/contsys.css">
+    <title>Mõiste valdkond „Planeerimine“</title>
+  </header>
+  <body>
+    <h1>Mõiste valdkond „Planeerimine“ (<i>planning</i>)</h1>
+    <ul>
+      <li>
+        <a class="term" title="raviplaan, mis hõlmab selliseid tervishoiuteenuse osutaja tegevusi, mida viivad läbi erineva tervishoiuteenuse osutamise õigusega tervishoiutöötajad" href="../concept/term/multi-professional&#32;care&#32;plan">mitme eriala raviplaan</a>
+        <i>raviplaan, mis hõlmab selliseid tervishoiuteenuse osutaja tegevusi, mida viivad läbi erineva tervishoiuteenuse osutamise õigusega tervishoiutöötajad</i>
+      </li>
+      <li>
+        <a class="term" title="kohandatud ravijuhend" href="../concept/term/protocol">protokoll</a>
+        <i>kohandatud ravijuhend</i>
+      </li>
+      <li>
+        <a class="term" title="süstemaatiliselt väljatöötatud soovituste kogum, mis aitab tervishoiutöötajatel teha otsuseid konkreetsete tervisemuredega seotud tervishoiutegevuste kohta" href="../concept/term/clinical&#32;guideline">ravijuhend</a>
+        <i>süstemaatiliselt väljatöötatud soovituste kogum, mis aitab tervishoiutöötajatel teha otsuseid konkreetsete tervisemuredega seotud tervishoiutegevuste kohta</i>
+      </li>
+      <li>
+        <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="../concept/term/care&#32;plan">raviplaan</a>
+        <i>dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke</i>
+      </li>
+      <li>
+        <a class="term" title="taaskasutatav sisu ja struktuur potentsiaalse raviplaani koostamiseks ühtsetel alustel" href="../concept/term/core&#32;care&#32;plan">raviplaani standard</a>
+        <i>taaskasutatav sisu ja struktuur potentsiaalse raviplaani koostamiseks ühtsetel alustel</i>
+      </li>
+      <li>
+        <a class="term" title="tervishoiutegevuste kava, mis kajastab ravistandardite sisu" href="../concept/term/clinical&#32;pathway">raviteekond</a>
+        <i>tervishoiutegevuste kava, mis kajastab ravistandardite sisu</i>
+      </li>
+      <li>
+        <a class="term" title="tervisevajadusi käsitleva tervishoiuprotsessi soovitud lõpptulemus" href="../concept/term/health&#32;objective">tervise-eesmärk</a>
+        <i>tervisevajadusi käsitleva tervishoiuprotsessi soovitud lõpptulemus</i>
+      </li>
+      <li>
+        <a class="term" title="ühe või mitme tervishoiutegevuse soovitud tulemus, mida peetakse konkreetse tervise-eesmärgi saavutamise vaheetapiks" href="../concept/term/healthcare&#32;goal">tervishoiutegevuse eesmärk</a>
+        <i>ühe või mitme tervishoiutegevuse soovitud tulemus, mida peetakse konkreetse tervise-eesmärgi saavutamise vaheetapiks</i>
+      </li>
+      <li>
+        <a class="term" title="tervishoiutegevuste hulk" href="../concept/term/healthcare&#32;activities&#32;bundle">tervishoiutegevuste kogum</a>
+        <i>tervishoiutegevuste hulk</i>
+      </li>
+      <li>
+        <a class="term" title="tervishoiutegevuste kogum, mis sisaldab tervisevajaduse käsitlemiseks vajalikuks peetavaid tervishoiutegevusi" href="../concept/term/needed&#32;healthcare&#32;activity">vajaminev tervishoiutegevus</a>
+        <i>tervishoiutegevuste kogum, mis sisaldab tervisevajaduse käsitlemiseks vajalikuks peetavaid tervishoiutegevusi</i>
+      </li>
+      <li>
+        <a class="term" title="raviplaan, mis hõlmab selliseid tervishoiuteenuse osutaja tegevusi, mida viivad läbi ühe ja sama tervishoiuteenuse osutamise õigusega tervishoiutöötajad" href="../concept/term/uniprofessional&#32;care&#32;plan">ühe eriala raviplaan</a>
+        <i>raviplaan, mis hõlmab selliseid tervishoiuteenuse osutaja tegevusi, mida viivad läbi ühe ja sama tervishoiuteenuse osutamise õigusega tervishoiutöötajad</i>
+      </li>
+    </ul>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        label="Valdkond „planeerimine“"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+7 [label="tervishoiu osapool" fontname="Cambria" tooltip="tervishoius osalev organisatsioon või isik" URL="/concept/term/healthcare actor" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+72 [label="raviplaan" fontname="Cambria" tooltip="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" URL="/concept/term/care plan" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+78 [label="ravijuhend" fontname="Cambria" tooltip="süstemaatiliselt väljatöötatud soovituste kogum, mis aitab tervishoiutöötajatel teha otsuseid konkreetsete tervisemuredega seotud tervishoiutegevuste kohta" URL="/concept/term/clinical guideline" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+10 [label="tervishoiuorganisatsioon" fontname="Cambria" tooltip="tervishoiuteenuse osutaja, millel on organisatsiooni roll" URL="/concept/term/healthcare organization" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+71 [label="raviplaani standard" fontname="Cambria" tooltip="taaskasutatav sisu ja struktuur potentsiaalse raviplaani koostamiseks ühtsetel alustel" URL="/concept/term/core care plan" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+15 [label="tervisemure" fontname="Cambria" tooltip="vähemalt ühe tervishoiu osapoole poolt kindlaks tehtud, patsiendi tervisega seotud mure kirjeldus" URL="/concept/term/health issue" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+16 [label="terviselõim" fontname="Cambria" tooltip="vähemalt ühe tervishoiu osapoole määratud sisuline seos terviseküsimuste vahel" URL="/concept/term/health thread" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+17 [label="sihtseisund" fontname="Cambria" tooltip="võimalik seisund, mis väljendab tervise- või tervishoiutegevuse eesmärke" URL="/concept/term/target condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+75 [label="tervishoiutegevuse eesmärk" fontname="Cambria" tooltip="ühe või mitme tervishoiutegevuse soovitud tulemus, mida peetakse konkreetse tervise-eesmärgi saavutamise vaheetapiks" URL="/concept/term/healthcare goal" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+76 [label="tervise-eesmärk" fontname="Cambria" tooltip="tervisevajadusi käsitleva tervishoiuprotsessi soovitud lõpptulemus" URL="/concept/term/health objective" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+20 [label="terviseseisund" fontname="Cambria" tooltip="mingil ajahetkel täheldatud või ajas jälgitavad terviseoleku aspektid" URL="/concept/term/health condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+70 [label="raviteekond" fontname="Cambria" tooltip="tervishoiutegevuste kava, mis kajastab ravistandardite sisu" URL="/concept/term/clinical pathway" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+36 [label="tervisevajadus" fontname="Cambria" tooltip="terviseoleku puudujääk võrreldes soovitud tulevase terviseolekuga" URL="/concept/term/health need" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+80 [label="vajaminev tervishoiutegevus" fontname="Cambria" tooltip="tervishoiutegevuste kogum, mis sisaldab tervisevajaduse käsitlemiseks vajalikuks peetavaid tervishoiutegevusi" URL="/concept/term/needed healthcare activity" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+39 [label="tervishoiutegevus" fontname="Cambria" tooltip="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" URL="/concept/term/healthcare activity" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+45 [label="vajaminevate tervishoiutegevuste hindamine" fontname="Cambria" tooltip="seisundi või tegevuse hindamine, mille käigus tervishoiutöötaja selgitab välja patsiendi tervisevajaduse ja vajaminevad tervishoiutegevused" URL="/concept/term/healthcare needs assessment" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+50 [label="tervishoiutegevuse juhtimine" fontname="Cambria" tooltip="tervishoiutoiming, mille käigus muudetakse raviplaanis olevate tervishoiutegevuste staatust" URL="/concept/term/healthcare activity management" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+53 [label="ravitegevuse planeerimine" fontname="Cambria" tooltip="tervishoiutegevuse juhtimise osa, mil toimub raviplaani koostamine või muutmine" URL="/concept/term/healthcare planning" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+63 [label="tervishoiuprotsess" fontname="Cambria" tooltip="omavahel seotud või vastastikku mõjutavad tervishoiutegevused, mis muudavad sisendid väljunditeks" URL="/concept/term/healthcare process" color="#b43232" style="filled,rounded" fillcolor="#F6E5E5" ]
+129 [label="terviselugu" fontname="Cambria" tooltip="patsiendi tervist ja ravi puudutav andmehoidla" URL="/concept/term/health record" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+77 [label="protokoll" fontname="Cambria" tooltip="kohandatud ravijuhend" URL="/concept/term/protocol" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+87 [label="tervishoiutöötaja vastuvõtt" fontname="Cambria" tooltip="tervishoiukontaktiks kokkulepitud aeg" URL="/concept/term/healthcare appointment" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+88 [label="tervisekäsitlus" fontname="Cambria" tooltip="raviepisoodid, mille käigus sooritatud tervishoiutegevused täidavad üht teatud tervishoiutegevuse eesmärki" URL="/concept/term/health approach" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+74 [label="tervishoiutegevuste kogum" fontname="Cambria" tooltip="tervishoiutegevuste hulk" URL="/concept/term/healthcare activities bundle" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+73 [label="ühe eriala raviplaan" fontname="Cambria" tooltip="raviplaan, mis hõlmab selliseid tervishoiuteenuse osutaja tegevusi, mida viivad läbi ühe ja sama tervishoiuteenuse osutamise õigusega tervishoiutöötajad" URL="/concept/term/uniprofessional care plan" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+79 [label="mitme eriala raviplaan" fontname="Cambria" tooltip="raviplaan, mis hõlmab selliseid tervishoiuteenuse osutaja tegevusi, mida viivad läbi erineva tervishoiuteenuse osutamise õigusega tervishoiutöötajad" URL="/concept/term/multi-professional care plan" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+7 -> 72 [label="rakendab"; fontname="Cambria"]
+7 -> 78 [label="tugineb otsustamisel"; fontname="Cambria"]
+10 -> 71 [label="võtab kasutusele"; fontname="Cambria"]
+72 -> 15 [label="käsitleb"; fontname="Cambria"]
+78 -> 15 [label="keskendub"; fontname="Cambria"]
+72 -> 16 [label="käsitleb"; fontname="Cambria"]
+17 -> 75 [label="väljendab"; fontname="Cambria"]
+17 -> 76 [label="väljendab"; fontname="Cambria"]
+20 -> 70 [label="mõjutab valikut"; fontname="Cambria"]
+70 -> 20 [label="käsitleb"; fontname="Cambria"]
+76 -> 36 [label="käsitleb"; fontname="Cambria"]
+80 -> 36 [label="käsitleb"; fontname="Cambria"]
+39 -> 75 [label="täidab eesmärki"; fontname="Cambria"]
+45 -> 80 [label="teeb kindlaks"; fontname="Cambria"]
+50 -> 72 [label="muudab tervishoiutegevuste staatust"; fontname="Cambria"]
+53 -> 78 [label="põhineb"; fontname="Cambria"]
+72 -> 53 [label="on tulemus"; fontname="Cambria"]
+63 -> 72 [label="kavandatakse"; fontname="Cambria"]
+70 -> 71 [label="kajastab"; fontname="Cambria"]
+70 -> 78 [label="viitab"; fontname="Cambria"]
+72 -> 71 [label="põhineb"; fontname="Cambria"]
+72 -> 129 [label="registreeritakse"; fontname="Cambria"]
+72 -> 75 [label="täidab eesmärki"; fontname="Cambria"]
+72 -> 76 [label="täidab eesmärki"; fontname="Cambria"]
+72 -> 77 [label="kohaldab"; fontname="Cambria"]
+72 -> 78 [label="järgib"; fontname="Cambria"]
+87 -> 72 [label="planeeritakse"; fontname="Cambria"]
+75 -> 76 [label="aitab saavutada"; fontname="Cambria"]
+88 -> 75 [label="käsitleb"; fontname="Cambria"]
+72 -> 73 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+78 -> 77 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+72 -> 79 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+74 -> 80 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+72 -> 39 [arrowtail="odiamond" dir="back" color="blue" fontname="Cambria"]
+72 -> 74 [arrowtail="odiamond" dir="back" color="blue" fontname="Cambria"]
+72 -> 72 [arrowtail="odiamond" dir="back" color="blue" fontname="Cambria"]
+74 -> 39 [arrowtail="odiamond" dir="back" color="blue" fontname="Cambria"]
+74 -> 74 [arrowtail="odiamond" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

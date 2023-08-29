@@ -1,0 +1,196 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>automated healthcare</title>
+  </header>
+  <body>
+    <h1>Tervisesekkumine automaatse meditsiiniseadmega</h1>
+    <div>Termin: tervisesekkumine automaatse meditsiiniseadmega (<i>automated healthcare</i>
+      <a href="https://contsys.org/concept/automated_healthcare" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: tervishoiuteenuse osutamine tervishoiu vastutava osapoole algatusel automaatse meditsiiniseadmega (<i>method of delivering healthcare initiated by a responsible healthcare actor and thereafter delivered automatically by an automatic medical device</i>)</div>
+    <div>Valdkond: <a href="../../domain/activity">tegevused (<i>activity</i>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: Automated healthcare is not a healthcare activity in its own right since the automatic medical device doesn't have the capacity to be responsible. It is the healthcare actor who initiates and reviews the automated healthcare that is responsible for safe use of the automatic medical device.<br>
+                 (<i>Automated healthcare is not a healthcare activity in its own right since the automatic medical device doesn't have the capacity to be responsible. It is the healthcare actor who initiates and reviews the automated healthcare that is responsible for safe use of the automatic medical device.</i>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoius osalev organisatsioon või isik" href="healthcare&#32;actor">tervishoiu osapool</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>vastutab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutamine tervishoiu vastutava osapoole algatusel automaatse meditsiiniseadmega" href="automated&#32;healthcare">tervisesekkumine automaatse meditsiiniseadmega</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutamine tervishoiu vastutava osapoole algatusel automaatse meditsiiniseadmega" href="automated&#32;healthcare">tervisesekkumine automaatse meditsiiniseadmega</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>algatatud [...] jooksul</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" href="healthcare&#32;activity">tervishoiutegevus</a>
+          </td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutamine tervishoiu vastutava osapoole algatusel automaatse meditsiiniseadmega" href="automated&#32;healthcare">tervisesekkumine automaatse meditsiiniseadmega</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>üle vaadatud [...] ajal</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" href="healthcare&#32;activity">tervishoiutegevus</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutamine tervishoiu vastutava osapoole algatusel automaatse meditsiiniseadmega" href="automated&#32;healthcare">tervisesekkumine automaatse meditsiiniseadmega</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>lõpetatud [...] ajal</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" href="healthcare&#32;activity">tervishoiutegevus</a>
+          </td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutamine tervishoiu vastutava osapoole algatusel automaatse meditsiiniseadmega" href="automated&#32;healthcare">tervisesekkumine automaatse meditsiiniseadmega</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>annab tulemuseks</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviseteave, mille asjakohasust ei ole tervishoiutöötaja hinnanud ega kinnitanud" href="non-ratified&#32;healthcare&#32;information">kinnitamata terviseandmed</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="meditsiiniseade, millega saab tervishoiutegevusi sooritada automaatselt" href="automatic&#32;medical&#32;device">automaatne meditsiiniseade</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>võimaldab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutamine tervishoiu vastutava osapoole algatusel automaatse meditsiiniseadmega" href="automated&#32;healthcare">tervisesekkumine automaatse meditsiiniseadmega</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>automated healthcare</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>automated healthcare</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>automated healthcare is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>automated healthcare is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="automated healthcare"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+7 [label="tervishoiu osapool" fontname="Cambria" tooltip="tervishoius osalev organisatsioon või isik" URL="/concept/term/healthcare actor" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+48 [label="tervisesekkumine automaatse meditsiiniseadmega" fontname="Cambria" tooltip="tervishoiuteenuse osutamine tervishoiu vastutava osapoole algatusel automaatse meditsiiniseadmega" URL="/concept/term/automated healthcare" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+39 [label="tervishoiutegevus" fontname="Cambria" tooltip="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" URL="/concept/term/healthcare activity" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+124 [label="kinnitamata terviseandmed" fontname="Cambria" tooltip="terviseteave, mille asjakohasust ei ole tervishoiutöötaja hinnanud ega kinnitanud" URL="/concept/term/non-ratified healthcare information" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+59 [label="automaatne meditsiiniseade" fontname="Cambria" tooltip="meditsiiniseade, millega saab tervishoiutegevusi sooritada automaatselt" URL="/concept/term/automatic medical device" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+7 -> 48 [label="vastutab"; fontname="Cambria"]
+48 -> 39 [label="algatatud ... jooksul"; fontname="Cambria"]
+48 -> 39 [label="üle vaadatud ... ajal"; fontname="Cambria"]
+48 -> 39 [label="lõpetatud ... ajal"; fontname="Cambria"]
+48 -> 124 [label="annab tulemuseks"; fontname="Cambria"]
+59 -> 48 [label="võimaldab"; fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>healthcare investigation</title>
+  </header>
+  <body>
+    <h1>Terviseuuring</h1>
+    <div>Termin: terviseuuring (<i>healthcare investigation</i>
+      <a href="https://contsys.org/concept/healthcare_investigation" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: tervishoiutoiming, mille eesmärk on selgitada patsiendi seisundi(te)ga seonduvat (<i>healthcare activity element with the intention to clarify one or more health conditions of a subject of care</i>)</div>
+    <div>Valdkond: <a href="../../domain/activity">tegevused (<i>activity</i>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: Healthcare investigations add and improve information about aspects of a health state.<br>
+                 (<i>Healthcare investigations add and improve information about aspects of a health state.</i>)</div>
+      <div>Märkus 2: Some primary healthcare investigations can sometimes have an intended or secondary therapeutic effect, while some activities can be both investigating and therapeutic by essence (e.g. a fibroscopy, interventional cardiology, etc.)<br>
+                 (<i>Some primary healthcare investigations can sometimes have an intended or secondary therapeutic effect, while some activities can be both investigating and therapeutic by essence (e.g. a fibroscopy, interventional cardiology, etc.)</i>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiutoiming, mille eesmärk on selgitada patsiendi seisundi(te)ga seonduvat" href="healthcare&#32;investigation">terviseuuring</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>avaldab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviseseisund, mida on täheldanud tervishoiu osapool" href="observed&#32;condition">täheldatud seisund</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiutoiming, mille eesmärk on selgitada patsiendi seisundi(te)ga seonduvat" href="healthcare&#32;investigation">terviseuuring</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>selgitab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="organismi füüsilised ja vaimsed funktsioonid, organismi struktuur, personaalsed tegurid, tegutsemine, osalus ja keskkonnategurid, mis kokku moodustavad patsiendi tervise" href="health&#32;state">terviseolek</a>
+          </td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare investigation</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="tervishoiutegevuse kindla eesmärgiga osa" href="healthcare&#32;activity&#32;element">tervishoiutoiming</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare investigation</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>healthcare investigation is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>healthcare investigation is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="healthcare investigation"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+43 [label="terviseuuring" fontname="Cambria" tooltip="tervishoiutoiming, mille eesmärk on selgitada patsiendi seisundi(te)ga seonduvat" URL="/concept/term/healthcare investigation" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+21 [label="täheldatud seisund" fontname="Cambria" tooltip="terviseseisund, mida on täheldanud tervishoiu osapool" URL="/concept/term/observed condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+24 [label="terviseolek" fontname="Cambria" tooltip="organismi füüsilised ja vaimsed funktsioonid, organismi struktuur, personaalsed tegurid, tegutsemine, osalus ja keskkonnategurid, mis kokku moodustavad patsiendi tervise" URL="/concept/term/health state" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+54 [label="tervishoiutoiming" fontname="Cambria" tooltip="tervishoiutegevuse kindla eesmärgiga osa" URL="/concept/term/healthcare activity element" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+43 -> 21 [label="avaldab"; fontname="Cambria"]
+43 -> 24 [label="selgitab"; fontname="Cambria"]
+54 -> 43 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

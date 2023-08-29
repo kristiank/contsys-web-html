@@ -1,0 +1,215 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>healthcare activity period</title>
+  </header>
+  <body>
+    <h1>Tervishoiutegevuse periood</h1>
+    <div>Termin: tervishoiutegevuse periood (<i>healthcare activity period</i>
+      <a href="https://contsys.org/concept/healthcare_activity_period" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: ajavahemik, mille jooksul sooritatakse patsiendi heaks tervishoiutegevusi (<i>time interval during which healthcare activities are performed for a subject of care</i>)</div>
+    <div>Valdkond: <a href="../../domain/time">aeg (<i>time</i>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: In EN 13940-1:2007 contact was the preferred term for this concept.<br>
+                 (<i>In EN 13940-1:2007 contact was the preferred term for this concept.</i>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="meditsiinipersonali hulka kuuluv isik, kellel on antud jurisdiktsioonis tervishoiutöötajana tegutsemise õigus" href="healthcare&#32;professional">tervishoiutöötaja</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>haldab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="ajavahemik, mille jooksul sooritatakse patsiendi heaks tervishoiutegevusi" href="healthcare&#32;activity&#32;period">tervishoiutegevuse periood</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" href="healthcare&#32;activity">tervishoiutegevus</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>viiakse läbi ajal</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="ajavahemik, mille jooksul sooritatakse patsiendi heaks tervishoiutegevusi" href="healthcare&#32;activity&#32;period">tervishoiutegevuse periood</a>
+          </td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="ajavahemik, mille jooksul sooritatakse patsiendi heaks tervishoiutegevusi" href="healthcare&#32;activity&#32;period">tervishoiutegevuse periood</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>toimub ajal</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiukontaktiks kokkulepitud aeg" href="healthcare&#32;appointment">tervishoiutöötaja vastuvõtt</a>
+          </td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="patsiendi tervist ja ravi puudutav andmehoidla" href="health&#32;record">terviselugu</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>on ligipääsetav jooksul</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="ajavahemik, mille jooksul sooritatakse patsiendi heaks tervishoiutegevusi" href="healthcare&#32;activity&#32;period">tervishoiutegevuse periood</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare activity period</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="ajavahemik, mis on seotud patsiendi tervise või patsiendile tervishoiuteenuse osutamisega" href="health&#32;related&#32;period">patsiendi tervisega seonduv periood</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare activity period</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="patsiendi osaluseta tervishoiutegevuse periood" href="indirect&#32;healthcare&#32;activity&#32;period">kaudse tervishoiutegevuse periood</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="tervishoiutegevuse periood, mil tervishoiukontakt aset leiab" href="contact&#32;period">tervishoiukontakti periood</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="tervishoiutegevuse periood, mil sooritatakse enesehooldust" href="self-care&#32;period">enesehooldusperiood</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>healthcare activity period is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="tervishoiutegevuse perioodi osa, mil käsitletakse üht teatud tervisemuret" href="healthcare&#32;activity&#32;period&#32;element">tervishoiutegevuse perioodi osa</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>healthcare activity period is a component of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="tervishoiutegevuste perioodide kogum, mil tervishoiuteenuse osutaja on volitatud sooritama tervishoiutegevusi teatud tervisevajaduste käsitlemiseks" href="mandated&#32;period&#32;of&#32;care">volitustega kaetud raviperiood</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="patsiendi tervisega seonduv periood, mis hõlmab ühe kliinilise protsessi kõiki tervishoiutegevuse perioode" href="clinical&#32;process&#32;episode">kliinilise protsessi episood</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="healthcare activity period"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+1 [label="tervishoiutöötaja" fontname="Cambria" tooltip="meditsiinipersonali hulka kuuluv isik, kellel on antud jurisdiktsioonis tervishoiutöötajana tegutsemise õigus" URL="/concept/term/healthcare professional" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+81 [label="tervishoiutegevuse periood" fontname="Cambria" tooltip="ajavahemik, mille jooksul sooritatakse patsiendi heaks tervishoiutegevusi" URL="/concept/term/healthcare activity period" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+39 [label="tervishoiutegevus" fontname="Cambria" tooltip="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" URL="/concept/term/healthcare activity" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+87 [label="tervishoiutöötaja vastuvõtt" fontname="Cambria" tooltip="tervishoiukontaktiks kokkulepitud aeg" URL="/concept/term/healthcare appointment" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+129 [label="terviselugu" fontname="Cambria" tooltip="patsiendi tervist ja ravi puudutav andmehoidla" URL="/concept/term/health record" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+85 [label="volitustega kaetud raviperiood" fontname="Cambria" tooltip="tervishoiutegevuste perioodide kogum, mil tervishoiuteenuse osutaja on volitatud sooritama tervishoiutegevusi teatud tervisevajaduste käsitlemiseks" URL="/concept/term/mandated period of care" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+82 [label="tervishoiutegevuse perioodi osa" fontname="Cambria" tooltip="tervishoiutegevuse perioodi osa, mil käsitletakse üht teatud tervisemuret" URL="/concept/term/healthcare activity period element" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+91 [label="kliinilise protsessi episood" fontname="Cambria" tooltip="patsiendi tervisega seonduv periood, mis hõlmab ühe kliinilise protsessi kõiki tervishoiutegevuse perioode" URL="/concept/term/clinical process episode" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+92 [label="patsiendi tervisega seonduv periood" fontname="Cambria" tooltip="ajavahemik, mis on seotud patsiendi tervise või patsiendile tervishoiuteenuse osutamisega" URL="/concept/term/health related period" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+89 [label="kaudse tervishoiutegevuse periood" fontname="Cambria" tooltip="patsiendi osaluseta tervishoiutegevuse periood" URL="/concept/term/indirect healthcare activity period" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+90 [label="tervishoiukontakti periood" fontname="Cambria" tooltip="tervishoiutegevuse periood, mil tervishoiukontakt aset leiab" URL="/concept/term/contact period" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+96 [label="enesehooldusperiood" fontname="Cambria" tooltip="tervishoiutegevuse periood, mil sooritatakse enesehooldust" URL="/concept/term/self-care period" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+1 -> 81 [label="haldab"; fontname="Cambria"]
+39 -> 81 [label="viiakse läbi ajal"; fontname="Cambria"]
+81 -> 87 [label="toimub ajal"; fontname="Cambria"]
+129 -> 81 [label="on ligipääsetav jooksul"; fontname="Cambria"]
+92 -> 81 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+81 -> 89 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+81 -> 90 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+81 -> 96 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+85 -> 81 [arrowtail="odiamond" dir="back" color="blue" fontname="Cambria"]
+91 -> 81 [arrowtail="odiamond" dir="back" color="blue" fontname="Cambria"]
+81 -> 82 [arrowtail="odiamond" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

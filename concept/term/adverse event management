@@ -1,0 +1,116 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>adverse event management</title>
+  </header>
+  <body>
+    <h1>Tüsistuse käsitlus</h1>
+    <div>Termin: tüsistuse käsitlus (<i>adverse event management</i>
+      <a href="https://contsys.org/concept/adverse_event_management" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: tüsistusele reageerimiseks sooritatavad tervishoiutegevused (<i>set of healthcare activities performed in response to an adverse event</i>)</div>
+    <div>Valdkond: <a href="../../domain/process">protsess (<i>process</i>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: The purposes for adverse event management are usually two: one is to reverse the effect or minimize the consequences of the adverse event, another one is to prevent the kind of adverse event in the future.<br>
+                 (<i>The purposes for adverse event management are usually two: one is to reverse the effect or minimize the consequences of the adverse event, another one is to prevent the kind of adverse event in the future.</i>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuprotsessidele negatiivset mõju avaldav ettekavatsemata sündmus" href="adverse&#32;event">tüsistus</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>nõuab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tüsistusele reageerimiseks sooritatavad tervishoiutegevused" href="adverse&#32;event&#32;management">tüsistuse käsitlus</a>
+          </td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>adverse event management</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>adverse event management</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>adverse event management is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" href="healthcare&#32;activity">tervishoiutegevus</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>adverse event management is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="adverse event management"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+65 [label="tüsistus" fontname="Cambria" tooltip="tervishoiuprotsessidele negatiivset mõju avaldav ettekavatsemata sündmus" URL="/concept/term/adverse event" color="#b43232" style="filled,rounded" fillcolor="#F6E5E5" ]
+66 [label="tüsistuse käsitlus" fontname="Cambria" tooltip="tüsistusele reageerimiseks sooritatavad tervishoiutegevused" URL="/concept/term/adverse event management" color="#b43232" style="filled,rounded" fillcolor="#F6E5E5" ]
+39 [label="tervishoiutegevus" fontname="Cambria" tooltip="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" URL="/concept/term/healthcare activity" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+65 -> 66 [label="nõuab"; fontname="Cambria"]
+66 -> 39 [arrowtail="odiamond" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>health state</title>
+  </header>
+  <body>
+    <h1>Terviseolek</h1>
+    <div>Termin: terviseolek (<i>health state</i>
+      <a href="https://contsys.org/concept/health_state" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: organismi füüsilised ja vaimsed funktsioonid, organismi struktuur, personaalsed tegurid, tegutsemine, osalus ja keskkonnategurid, mis kokku moodustavad patsiendi tervise (<i>physical and mental functions, body structure, personal factors, activity, participation and environmental aspects as the composite health of a subject of care</i>)</div>
+    <div>Valdkond: <a href="../../domain/matter">asjaolud (<i>matter</i>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: An observation of a health state is a health condition. A health state may possibly give way to more than one observation, resulting in more than one health condition. The underlying health state is nevertheless present even if not perceived by an observer, for example, the subject of care having a cancer before it gives symptoms.<br>
+                 (<i>An observation of a health state is a health condition. A health state may possibly give way to more than one observation, resulting in more than one health condition. The underlying health state is nevertheless present even if not perceived by an observer, for example, the subject of care having a cancer before it gives symptoms.</i>)</div>
+      <div>Märkus 2: In ICF (the International Classification of Functioning, Disability and Health) of the WHO, the concept of health is described. ICF identifies five health components; body function, body structure, activity, participation and environmental factors.<br>
+                 (<i>In ICF (the International Classification of Functioning, Disability and Health) of the WHO, the concept of health is described. ICF identifies five health components; body function, body structure, activity, participation and environmental factors.</i>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiu osapool isiku rollis; keegi, kes tahab saada, saab või on saanud tervishoiusüsteemis teenust" href="subject&#32;of&#32;care">patsient</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>omab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="organismi füüsilised ja vaimsed funktsioonid, organismi struktuur, personaalsed tegurid, tegutsemine, osalus ja keskkonnategurid, mis kokku moodustavad patsiendi tervise" href="health&#32;state">terviseolek</a>
+          </td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="organismi füüsilised ja vaimsed funktsioonid, organismi struktuur, personaalsed tegurid, tegutsemine, osalus ja keskkonnategurid, mis kokku moodustavad patsiendi tervise" href="health&#32;state">terviseolek</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>vaadeldakse </td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviseseisund, mida on täheldanud tervishoiu osapool" href="observed&#32;condition">täheldatud seisund</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervisehoiu osapoole kirjeldatud võimalik tuleviku või praegune terviseseisund" href="potential&#32;health&#32;condition">võimalik seisund</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>kujutab võimalikke aspekte </td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="organismi füüsilised ja vaimsed funktsioonid, organismi struktuur, personaalsed tegurid, tegutsemine, osalus ja keskkonnategurid, mis kokku moodustavad patsiendi tervise" href="health&#32;state">terviseolek</a>
+          </td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviseoleku puudujääk võrreldes soovitud tulevase terviseolekuga" href="health&#32;need">tervisevajadus</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>on puudujääk</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="organismi füüsilised ja vaimsed funktsioonid, organismi struktuur, personaalsed tegurid, tegutsemine, osalus ja keskkonnategurid, mis kokku moodustavad patsiendi tervise" href="health&#32;state">terviseolek</a>
+          </td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiutoiming, mille eesmärk on selgitada patsiendi seisundi(te)ga seonduvat" href="healthcare&#32;investigation">terviseuuring</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>selgitab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="organismi füüsilised ja vaimsed funktsioonid, organismi struktuur, personaalsed tegurid, tegutsemine, osalus ja keskkonnategurid, mis kokku moodustavad patsiendi tervise" href="health&#32;state">terviseolek</a>
+          </td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiutoiming, mille eesmärk on otseselt parandada või säilitada terviseolekut" href="healthcare&#32;treatment">ravi</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>mõjutab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="organismi füüsilised ja vaimsed funktsioonid, organismi struktuur, personaalsed tegurid, tegutsemine, osalus ja keskkonnategurid, mis kokku moodustavad patsiendi tervise" href="health&#32;state">terviseolek</a>
+          </td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>health state</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>health state</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="terviseolek tervishoiuprotsessi alguses" href="input&#32;health&#32;state">algne terviseolek</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="terviseolek tervishoiuprotsessi lõpus" href="output&#32;health&#32;state">saavutatud terviseolek</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>health state is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>health state is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="health state"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+3 [label="patsient" fontname="Cambria" tooltip="tervishoiu osapool isiku rollis; keegi, kes tahab saada, saab või on saanud tervishoiusüsteemis teenust" URL="/concept/term/subject of care" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+24 [label="terviseolek" fontname="Cambria" tooltip="organismi füüsilised ja vaimsed funktsioonid, organismi struktuur, personaalsed tegurid, tegutsemine, osalus ja keskkonnategurid, mis kokku moodustavad patsiendi tervise" URL="/concept/term/health state" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+21 [label="täheldatud seisund" fontname="Cambria" tooltip="terviseseisund, mida on täheldanud tervishoiu osapool" URL="/concept/term/observed condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+22 [label="võimalik seisund" fontname="Cambria" tooltip="tervisehoiu osapoole kirjeldatud võimalik tuleviku või praegune terviseseisund" URL="/concept/term/potential health condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+36 [label="tervisevajadus" fontname="Cambria" tooltip="terviseoleku puudujääk võrreldes soovitud tulevase terviseolekuga" URL="/concept/term/health need" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+43 [label="terviseuuring" fontname="Cambria" tooltip="tervishoiutoiming, mille eesmärk on selgitada patsiendi seisundi(te)ga seonduvat" URL="/concept/term/healthcare investigation" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+49 [label="ravi" fontname="Cambria" tooltip="tervishoiutoiming, mille eesmärk on otseselt parandada või säilitada terviseolekut" URL="/concept/term/healthcare treatment" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+29 [label="algne terviseolek" fontname="Cambria" tooltip="terviseolek tervishoiuprotsessi alguses" URL="/concept/term/input health state" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+30 [label="saavutatud terviseolek" fontname="Cambria" tooltip="terviseolek tervishoiuprotsessi lõpus" URL="/concept/term/output health state" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+3 -> 24 [label="omab"; fontname="Cambria"]
+24 -> 21 [label="vaadeldakse "; fontname="Cambria"]
+22 -> 24 [label="kujutab võimalikke aspekte "; fontname="Cambria"]
+36 -> 24 [label="on puudujääk"; fontname="Cambria"]
+43 -> 24 [label="selgitab"; fontname="Cambria"]
+49 -> 24 [label="mõjutab"; fontname="Cambria"]
+24 -> 29 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+24 -> 30 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

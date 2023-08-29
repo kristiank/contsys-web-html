@@ -1,0 +1,145 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>healthcare quality management</title>
+  </header>
+  <body>
+    <h1>Tervishoiuorganisatsiooni kvaliteedihaldus</h1>
+    <div>Termin: tervishoiuorganisatsiooni kvaliteedihaldus (<i>healthcare quality management</i>
+      <a href="https://contsys.org/concept/healthcare_quality_management" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: kooskõlastatud tegevus tervishoiuorganisatsiooni kvaliteeditöö juhtimiseks ja kontrollimiseks (<i>coordinated activities to direct and control a healthcare organization with regard to quality</i>)</div>
+    <div>Valdkond: <a href="../../domain/process">protsess (<i>process</i>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: The clinical processes are the most important type of healthcare processes related to healthcare quality management.<br>
+                 (<i>The clinical processes are the most important type of healthcare processes related to healthcare quality management.</i>)</div>
+      <div>Märkus 2: Healthcare quality management activities include the establishment of a quality policy, setting quality objectives, the performance of audits, evaluation and a feedback loop for quality improvement, all resulting in quality assurance.<br>
+                 (<i>Healthcare quality management activities include the establishment of a quality policy, setting quality objectives, the performance of audits, evaluation and a feedback loop for quality improvement, all resulting in quality assurance.</i>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutaja, millel on organisatsiooni roll" href="healthcare&#32;organization">tervishoiuorganisatsioon</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>viib läbi</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="kooskõlastatud tegevus tervishoiuorganisatsiooni kvaliteeditöö juhtimiseks ja kontrollimiseks" href="healthcare&#32;quality&#32;management">tervishoiuorganisatsiooni kvaliteedihaldus</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="omavahel seotud või vastastikku mõjutavad tervishoiutegevused, mis muudavad sisendid väljunditeks" href="healthcare&#32;process">tervishoiuprotsess</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>annab tagasisidet</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="kooskõlastatud tegevus tervishoiuorganisatsiooni kvaliteeditöö juhtimiseks ja kontrollimiseks" href="healthcare&#32;quality&#32;management">tervishoiuorganisatsiooni kvaliteedihaldus</a>
+          </td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="kooskõlastatud tegevus tervishoiuorganisatsiooni kvaliteeditöö juhtimiseks ja kontrollimiseks" href="healthcare&#32;quality&#32;management">tervishoiuorganisatsiooni kvaliteedihaldus</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>kontrollib kvaliteeti</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="omavahel seotud või vastastikku mõjutavad tervishoiutegevused, mis muudavad sisendid väljunditeks" href="healthcare&#32;process">tervishoiuprotsess</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare quality management</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare quality management</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>healthcare quality management is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>healthcare quality management is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="healthcare quality management"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+10 [label="tervishoiuorganisatsioon" fontname="Cambria" tooltip="tervishoiuteenuse osutaja, millel on organisatsiooni roll" URL="/concept/term/healthcare organization" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+64 [label="tervishoiuorganisatsiooni kvaliteedihaldus" fontname="Cambria" tooltip="kooskõlastatud tegevus tervishoiuorganisatsiooni kvaliteeditöö juhtimiseks ja kontrollimiseks" URL="/concept/term/healthcare quality management" color="#b43232" style="filled,rounded" fillcolor="#F6E5E5" ]
+63 [label="tervishoiuprotsess" fontname="Cambria" tooltip="omavahel seotud või vastastikku mõjutavad tervishoiutegevused, mis muudavad sisendid väljunditeks" URL="/concept/term/healthcare process" color="#b43232" style="filled,rounded" fillcolor="#F6E5E5" ]
+10 -> 64 [label="viib läbi"; fontname="Cambria"]
+63 -> 64 [label="annab tagasisidet"; fontname="Cambria"]
+64 -> 63 [label="kontrollib kvaliteeti"; fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

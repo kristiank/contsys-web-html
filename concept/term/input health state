@@ -1,0 +1,134 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>input health state</title>
+  </header>
+  <body>
+    <h1>Algne terviseolek</h1>
+    <div>Termin: algne terviseolek (<i>input health state</i>
+      <a href="https://contsys.org/concept/input_health_state" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: terviseolek tervishoiuprotsessi alguses (<i>health state at the initiation of healthcare process</i>)</div>
+    <div>Valdkond: <a href="../../domain/matter">asjaolud (<i>matter</i>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: The output health state from one healthcare process may be the input health state to a subsequent healthcare process.<br>
+                 (<i>The output health state from one healthcare process may be the input health state to a subsequent healthcare process.</i>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviselõim, mis algab algse terviseolekuga ja näitab tervishoiuprotsessi jooksul toimuvat terviseseisundite muutust" href="health&#32;condition&#32;evolution">terviseseisundi muutus</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>on seotud</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviseolek tervishoiuprotsessi alguses" href="input&#32;health&#32;state">algne terviseolek</a>
+          </td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviseolek tervishoiuprotsessi alguses" href="input&#32;health&#32;state">algne terviseolek</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>on sisend</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="omavahel seotud või vastastikku mõjutavad tervishoiutegevused, mis muudavad sisendid väljunditeks" href="healthcare&#32;process">tervishoiuprotsess</a>
+          </td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>input health state</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="organismi füüsilised ja vaimsed funktsioonid, organismi struktuur, personaalsed tegurid, tegutsemine, osalus ja keskkonnategurid, mis kokku moodustavad patsiendi tervise" href="health&#32;state">terviseolek</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>input health state</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>input health state is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>input health state is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="input health state"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+28 [label="terviseseisundi muutus" fontname="Cambria" tooltip="terviselõim, mis algab algse terviseolekuga ja näitab tervishoiuprotsessi jooksul toimuvat terviseseisundite muutust" URL="/concept/term/health condition evolution" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+29 [label="algne terviseolek" fontname="Cambria" tooltip="terviseolek tervishoiuprotsessi alguses" URL="/concept/term/input health state" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+63 [label="tervishoiuprotsess" fontname="Cambria" tooltip="omavahel seotud või vastastikku mõjutavad tervishoiutegevused, mis muudavad sisendid väljunditeks" URL="/concept/term/healthcare process" color="#b43232" style="filled,rounded" fillcolor="#F6E5E5" ]
+24 [label="terviseolek" fontname="Cambria" tooltip="organismi füüsilised ja vaimsed funktsioonid, organismi struktuur, personaalsed tegurid, tegutsemine, osalus ja keskkonnategurid, mis kokku moodustavad patsiendi tervise" URL="/concept/term/health state" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+28 -> 29 [label="on seotud"; fontname="Cambria"]
+29 -> 63 [label="on sisend"; fontname="Cambria"]
+24 -> 29 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

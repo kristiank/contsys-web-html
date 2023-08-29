@@ -1,0 +1,133 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>healthcare evaluation</title>
+  </header>
+  <body>
+    <h1>Tervishoiutegevuse hindamine</h1>
+    <div>Termin: tervishoiutegevuse hindamine (<i>healthcare evaluation</i>
+      <a href="https://contsys.org/concept/healthcare_evaluation" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: tervishoiutoiming, mille käigus antakse hinnang mis tahes muu tervishoiutegevuse kohta (<i>healthcare activity element where aspects of at least one other healthcare activity element is evaluated</i>)</div>
+    <div>Valdkond: <a href="../../domain/activity">tegevused (<i>activity</i>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: Healthcare evaluation may be performed by all kinds of healthcare actors, including the subject of care.<br>
+                 (<i>Healthcare evaluation may be performed by all kinds of healthcare actors, including the subject of care.</i>)</div>
+      <div>Märkus 2: See also clinical process outcome evaluation.<br>
+                 (<i>See also clinical process outcome evaluation.</i>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiutoiming, mille käigus antakse hinnang mis tahes muu tervishoiutegevuse kohta" href="healthcare&#32;evaluation">tervishoiutegevuse hindamine</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>hindab aspekte </td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" href="healthcare&#32;activity">tervishoiutegevus</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare evaluation</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="tervishoiutegevuse kindla eesmärgiga osa" href="healthcare&#32;activity&#32;element">tervishoiutoiming</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare evaluation</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="tervishoiutegevuse hindamine, mille käigus hinnatakse kliinilise protsessi mõju terviseolekule sihtseisundi või algset terviseolekut kirjeldava terviseseisundi suhtes" href="clinical&#32;process&#32;outcome&#32;evaluation">kliinilise protsessi tulemi hindamine</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="tervishoiutegevuse hindamine, mille käigus hinnatakse süstemaatiliselt tervishoiuprotsesside nõuetele vastavust" href="healthcare&#32;process&#32;evaluation">tervishoiuprotsessi hindamine</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>healthcare evaluation is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>healthcare evaluation is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="healthcare evaluation"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+52 [label="tervishoiutegevuse hindamine" fontname="Cambria" tooltip="tervishoiutoiming, mille käigus antakse hinnang mis tahes muu tervishoiutegevuse kohta" URL="/concept/term/healthcare evaluation" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+39 [label="tervishoiutegevus" fontname="Cambria" tooltip="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" URL="/concept/term/healthcare activity" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+54 [label="tervishoiutoiming" fontname="Cambria" tooltip="tervishoiutegevuse kindla eesmärgiga osa" URL="/concept/term/healthcare activity element" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+41 [label="kliinilise protsessi tulemi hindamine" fontname="Cambria" tooltip="tervishoiutegevuse hindamine, mille käigus hinnatakse kliinilise protsessi mõju terviseolekule sihtseisundi või algset terviseolekut kirjeldava terviseseisundi suhtes" URL="/concept/term/clinical process outcome evaluation" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+42 [label="tervishoiuprotsessi hindamine" fontname="Cambria" tooltip="tervishoiutegevuse hindamine, mille käigus hinnatakse süstemaatiliselt tervishoiuprotsesside nõuetele vastavust" URL="/concept/term/healthcare process evaluation" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+52 -> 39 [label="hindab aspekte "; fontname="Cambria"]
+54 -> 52 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+52 -> 41 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+52 -> 42 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

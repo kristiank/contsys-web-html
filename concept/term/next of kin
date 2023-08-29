@@ -1,0 +1,118 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>next of kin</title>
+  </header>
+  <body>
+    <h1>Lähedane isik</h1>
+    <div>Termin: lähedane isik (<i>next of kin</i>
+      <a href="https://contsys.org/concept/next_of_kin" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: isiku roll; keegi, kes on patsiendi lähim elusolev sugulane või kellega tal on lähedane suhe (<i>person role being either the closest living relative of the subject of care or identified as the one he has a close relationship with</i>)</div>
+    <div>Valdkond: <a href="../../domain/actor">osapooled (<i>actor</i>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: The person that is the next of kin may participate implicitly or explicitly in healthcare by sometimes being a subject of care proxy when the subject of care has impaired consent competence. Thereby in these circumstances a person that is next of kin can perform the role of a healthcare third party.<br>
+                 (<i>The person that is the next of kin may participate implicitly or explicitly in healthcare by sometimes being a subject of care proxy when the subject of care has impaired consent competence. Thereby in these circumstances a person that is next of kin can perform the role of a healthcare third party.</i>)</div>
+      <div>Märkus 2: A person may play the role of next of kin to more than one subject of care<br>
+                 (<i>A person may play the role of next of kin to more than one subject of care</i>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiu osapool isiku rollis; keegi, kes tahab saada, saab või on saanud tervishoiusüsteemis teenust" href="subject&#32;of&#32;care">patsient</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>omab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="isiku roll; keegi, kes on patsiendi lähim elusolev sugulane või kellega tal on lähedane suhe" href="next&#32;of&#32;kin">lähedane isik</a>
+          </td>
+          <td>0..1</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>next of kin</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="isiku (3.3.4) roll (3.3.5)" href="person&#32;role">isiku roll</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>next of kin</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>next of kin is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>next of kin is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="next of kin"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+3 [label="patsient" fontname="Cambria" tooltip="tervishoiu osapool isiku rollis; keegi, kes tahab saada, saab või on saanud tervishoiusüsteemis teenust" URL="/concept/term/subject of care" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+13 [label="lähedane isik" fontname="Cambria" tooltip="isiku roll; keegi, kes on patsiendi lähim elusolev sugulane või kellega tal on lähedane suhe" URL="/concept/term/next of kin" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+151 [label="isiku roll" fontname="Cambria" tooltip="isiku (3.3.4) roll (3.3.5)" URL="/concept/term/person role" color="#000000" ]
+3 -> 13 [label="omab"; fontname="Cambria"]
+151 -> 13 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>
