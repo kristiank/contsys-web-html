@@ -1,5 +1,6 @@
 <html>
   <header>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="../../static/contsys.css">
     <title>attestation information</title>
   </header>
