@@ -1,0 +1,227 @@
+<html>
+  <header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>Tervishoiuteenuse osutaja tegevus (healthcare provider activity)</title>
+  </header>
+  <body>
+    <h1>Tervishoiuteenuse osutaja tegevus</h1>
+    <div>Termin: tervishoiuteenuse osutaja tegevus (<em>healthcare provider activity</em>
+      <a href="https://contsys.org/concept/healthcare_provider_activity" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: tervishoiuteenuse osutaja tervishoiutegevus (<em>healthcare activity performed by a healthcare provider</em>)</div>
+    <div>Valdkond: <a href="../../domain/activity.html">tegevused (<em>activity</em>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: A healthcare provider activity can be performed in relation to several healthcare activity period elements of the same healthcare activity period.<br>
+                 (<em>A healthcare provider activity can be performed in relation to several healthcare activity period elements of the same healthcare activity period.</em>)</div>
+      <div>Märkus 2: When the healthcare provider is a healthcare organization, the healthcare activities are performed by the healthcare personnel of that healthcare organization.<br>
+                 (<em>When the healthcare provider is a healthcare organization, the healthcare activities are performed by the healthcare personnel of that healthcare organization.</em>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiu osapool, kellele saab määrata üht või enamat ravivolitust" href="healthcare&#32;provider.html">tervishoiuteenuse osutaja</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>viib läbi</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutaja tervishoiutegevus" href="healthcare&#32;provider&#32;activity.html">tervishoiuteenuse osutaja tegevus</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutaja tervishoiutegevus" href="healthcare&#32;provider&#32;activity.html">tervishoiuteenuse osutaja tegevus</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>käsitleb</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="vähemalt ühe tervishoiu osapoole poolt kindlaks tehtud, patsiendi tervisega seotud mure kirjeldus" href="health&#32;issue.html">tervisemure</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutaja tervishoiutegevus" href="healthcare&#32;provider&#32;activity.html">tervishoiuteenuse osutaja tegevus</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>nõuab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tegevusvolitus, mis annab õiguse ja kohustuse sooritada teatud tervishoiutegevust" href="healthcare&#32;activity&#32;mandate.html">tervishoiutegevuse volitus</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutaja tervishoiutegevus" href="healthcare&#32;provider&#32;activity.html">tervishoiuteenuse osutaja tegevus</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>loob</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviseteave, mida võidakse importida erialasesse terviseloosse, kui tervishoiutöötaja on kinnitanud, et teave on erialase terviseloo jaoks kliiniliselt oluline" href="healthcare&#32;information&#32;for&#32;import.html">terviseandmed importimiseks</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tegevusvolitus, millega antakse luba volitusega kaetud raviperioodiks" href="care&#32;period&#32;mandate.html">ravivolitus</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>annab õiguse </td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutaja tervishoiutegevus" href="healthcare&#32;provider&#32;activity.html">tervishoiuteenuse osutaja tegevus</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiu osapoole väljendatud taotlus tervishoiuteenuse osutaja tegevusteks" href="demand&#32;for&#32;care.html">ravitaotlus</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>eeldab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutaja tervishoiutegevus" href="healthcare&#32;provider&#32;activity.html">tervishoiuteenuse osutaja tegevus</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutaja tervishoiutegevuste loetelu" href="healthcare&#32;activity&#32;directory.html">tervishoiutegevuste loetelu</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>sisaldab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutaja tervishoiutegevus" href="healthcare&#32;provider&#32;activity.html">tervishoiuteenuse osutaja tegevus</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare provider activity</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" href="healthcare&#32;activity.html">tervishoiutegevus</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare provider activity</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>healthcare provider activity is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>healthcare provider activity is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="healthcare provider activity"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+8 [label="tervishoiuteenuse osutaja" fontname="Cambria" tooltip="tervishoiu osapool, kellele saab määrata üht või enamat ravivolitust" URL="/concept/term/healthcare provider" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+38 [label="tervishoiuteenuse osutaja tegevus" fontname="Cambria" tooltip="tervishoiuteenuse osutaja tervishoiutegevus" URL="/concept/term/healthcare provider activity" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+15 [label="tervisemure" fontname="Cambria" tooltip="vähemalt ühe tervishoiu osapoole poolt kindlaks tehtud, patsiendi tervisega seotud mure kirjeldus" URL="/concept/term/health issue" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+117 [label="tervishoiutegevuse volitus" fontname="Cambria" tooltip="tegevusvolitus, mis annab õiguse ja kohustuse sooritada teatud tervishoiutegevust" URL="/concept/term/healthcare activity mandate" color="#376fa6" style="filled,rounded" fillcolor="#E6EDF4" ]
+122 [label="terviseandmed importimiseks" fontname="Cambria" tooltip="terviseteave, mida võidakse importida erialasesse terviseloosse, kui tervishoiutöötaja on kinnitanud, et teave on erialase terviseloo jaoks kliiniliselt oluline" URL="/concept/term/healthcare information for import" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+101 [label="ravivolitus" fontname="Cambria" tooltip="tegevusvolitus, millega antakse luba volitusega kaetud raviperioodiks" URL="/concept/term/care period mandate" color="#376fa6" style="filled,rounded" fillcolor="#E6EDF4" ]
+103 [label="ravitaotlus" fontname="Cambria" tooltip="tervishoiu osapoole väljendatud taotlus tervishoiuteenuse osutaja tegevusteks" URL="/concept/term/demand for care" color="#376fa6" style="filled,rounded" fillcolor="#E6EDF4" ]
+44 [label="tervishoiutegevuste loetelu" fontname="Cambria" tooltip="tervishoiuteenuse osutaja tervishoiutegevuste loetelu" URL="/concept/term/healthcare activity directory" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+39 [label="tervishoiutegevus" fontname="Cambria" tooltip="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" URL="/concept/term/healthcare activity" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+8 -> 38 [label="viib läbi"; fontname="Cambria"]
+38 -> 15 [label="käsitleb"; fontname="Cambria"]
+38 -> 117 [label="nõuab"; fontname="Cambria"]
+38 -> 122 [label="loob"; fontname="Cambria"]
+101 -> 38 [label="annab õiguse "; fontname="Cambria"]
+103 -> 38 [label="eeldab"; fontname="Cambria"]
+44 -> 38 [label="sisaldab"; fontname="Cambria"]
+39 -> 38 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

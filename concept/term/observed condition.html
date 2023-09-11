@@ -1,0 +1,242 @@
+<html>
+  <header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>Täheldatud seisund (observed condition)</title>
+  </header>
+  <body>
+    <h1>Täheldatud seisund</h1>
+    <div>Termin: täheldatud seisund (<em>observed condition</em>
+      <a href="https://contsys.org/concept/observed_condition" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: terviseseisund, mida on täheldanud tervishoiu osapool (<em>health condition observed by a healthcare actor</em>)</div>
+    <div>Valdkond: <a href="../../domain/matter.html">asjaolud (<em>matter</em>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: Healthcare professionals and subjects of care are examples of healthcare actors that can perceive the observed aspect of a health state.<br>
+                 (<em>Healthcare professionals and subjects of care are examples of healthcare actors that can perceive the observed aspect of a health state.</em>)</div>
+      <div>Märkus 2: An observed condition is a health issue and as such is a representation of aspect(s) of the health state.<br>
+                 (<em>An observed condition is a health issue and as such is a representation of aspect(s) of the health state.</em>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoius osalev organisatsioon või isik" href="healthcare&#32;actor.html">tervishoiu osapool</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>on täheldanud</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviseseisund, mida on täheldanud tervishoiu osapool" href="observed&#32;condition.html">täheldatud seisund</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviseseisund, mida on täheldanud tervishoiu osapool" href="observed&#32;condition.html">täheldatud seisund</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>on täheldatud ajal</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="patsiendi tervisega seonduv periood, mil jälgitakse terviseseisundit" href="health&#32;condition&#32;period.html">terviseseisundi periood</a>
+          </td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="organismi füüsilised ja vaimsed funktsioonid, organismi struktuur, personaalsed tegurid, tegutsemine, osalus ja keskkonnategurid, mis kokku moodustavad patsiendi tervise" href="health&#32;state.html">terviseolek</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>vaadeldakse </td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviseseisund, mida on täheldanud tervishoiu osapool" href="observed&#32;condition.html">täheldatud seisund</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="võimalik seisund, mida tervishoiu osapool vähemalt ühe täheldatud seisundi põhjal arvesse võtab" href="considered&#32;condition.html">arvesse võetav seisund</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>põhineb</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviseseisund, mida on täheldanud tervishoiu osapool" href="observed&#32;condition.html">täheldatud seisund</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="arvesse võetav seisund, mille vähemalt üks tervishoiutöötaja on tuvastanud ja mis ei ole kooskõlas teadaolevate täheldatud seisunditega" href="excluded&#32;condition.html">välistatud seisund</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>ei ole kooskõlas</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviseseisund, mida on täheldanud tervishoiu osapool" href="observed&#32;condition.html">täheldatud seisund</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="arvesse võetav seisund, mille vähemalt üks tervishoiutöötaja on tuvastanud ja mis on kõige rohkem kooskõlas praeguste teadaolevate täheldatud seisunditega" href="working&#32;diagnosis.html">töödiagnoos</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>on kooskõlas</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviseseisund, mida on täheldanud tervishoiu osapool" href="observed&#32;condition.html">täheldatud seisund</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiutoiming, mille eesmärk on selgitada patsiendi seisundi(te)ga seonduvat" href="healthcare&#32;investigation.html">terviseuuring</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>avaldab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviseseisund, mida on täheldanud tervishoiu osapool" href="observed&#32;condition.html">täheldatud seisund</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>observed condition</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="mingil ajahetkel täheldatud või ajas jälgitavad terviseoleku aspektid" href="health&#32;condition.html">terviseseisund</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>observed condition</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="täheldatud seisund, mida tervishoiutöötaja on hinnanud seoses terviseoleku tekke, kulu, raskuse või mõjuga" href="professionally&#32;assessed&#32;condition.html">tervishoiutöötaja hinnatud seisund</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="täheldatud seisund, mis kirjeldab saavutatud terviseolekut" href="resultant&#32;condition.html">saavutatud seisund</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>observed condition is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>observed condition is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="observed condition"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+7 [label="tervishoiu osapool" fontname="Cambria" tooltip="tervishoius osalev organisatsioon või isik" URL="/concept/term/healthcare actor" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+21 [label="täheldatud seisund" fontname="Cambria" tooltip="terviseseisund, mida on täheldanud tervishoiu osapool" URL="/concept/term/observed condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+99 [label="terviseseisundi periood" fontname="Cambria" tooltip="patsiendi tervisega seonduv periood, mil jälgitakse terviseseisundit" URL="/concept/term/health condition period" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+24 [label="terviseolek" fontname="Cambria" tooltip="organismi füüsilised ja vaimsed funktsioonid, organismi struktuur, personaalsed tegurid, tegutsemine, osalus ja keskkonnategurid, mis kokku moodustavad patsiendi tervise" URL="/concept/term/health state" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+25 [label="arvesse võetav seisund" fontname="Cambria" tooltip="võimalik seisund, mida tervishoiu osapool vähemalt ühe täheldatud seisundi põhjal arvesse võtab" URL="/concept/term/considered condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+32 [label="välistatud seisund" fontname="Cambria" tooltip="arvesse võetav seisund, mille vähemalt üks tervishoiutöötaja on tuvastanud ja mis ei ole kooskõlas teadaolevate täheldatud seisunditega" URL="/concept/term/excluded condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+34 [label="töödiagnoos" fontname="Cambria" tooltip="arvesse võetav seisund, mille vähemalt üks tervishoiutöötaja on tuvastanud ja mis on kõige rohkem kooskõlas praeguste teadaolevate täheldatud seisunditega" URL="/concept/term/working diagnosis" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+43 [label="terviseuuring" fontname="Cambria" tooltip="tervishoiutoiming, mille eesmärk on selgitada patsiendi seisundi(te)ga seonduvat" URL="/concept/term/healthcare investigation" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+20 [label="terviseseisund" fontname="Cambria" tooltip="mingil ajahetkel täheldatud või ajas jälgitavad terviseoleku aspektid" URL="/concept/term/health condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+19 [label="tervishoiutöötaja hinnatud seisund" fontname="Cambria" tooltip="täheldatud seisund, mida tervishoiutöötaja on hinnanud seoses terviseoleku tekke, kulu, raskuse või mõjuga" URL="/concept/term/professionally assessed condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+31 [label="saavutatud seisund" fontname="Cambria" tooltip="täheldatud seisund, mis kirjeldab saavutatud terviseolekut" URL="/concept/term/resultant condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+7 -> 21 [label="on täheldanud"; fontname="Cambria"]
+21 -> 99 [label="on täheldatud ajal"; fontname="Cambria"]
+24 -> 21 [label="vaadeldakse "; fontname="Cambria"]
+25 -> 21 [label="põhineb"; fontname="Cambria"]
+32 -> 21 [label="ei ole kooskõlas"; fontname="Cambria"]
+34 -> 21 [label="on kooskõlas"; fontname="Cambria"]
+43 -> 21 [label="avaldab"; fontname="Cambria"]
+20 -> 21 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+21 -> 19 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+21 -> 31 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

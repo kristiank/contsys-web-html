@@ -1,0 +1,142 @@
+<html>
+  <header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>Tervishoiutöötaja vastuvõtt (healthcare appointment)</title>
+  </header>
+  <body>
+    <h1>Tervishoiutöötaja vastuvõtt</h1>
+    <div>Termin: tervishoiutöötaja vastuvõtt (<em>healthcare appointment</em>
+      <a href="https://contsys.org/concept/healthcare_appointment" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: tervishoiukontaktiks kokkulepitud aeg (<em>appointment for a contact</em>)</div>
+    <div>Valdkond: <a href="../../domain/time.html">aeg (<em>time</em>)</a>
+    </div>
+    <div></div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiukontaktiks kokkulepitud aeg" href="healthcare&#32;appointment.html">tervishoiutöötaja vastuvõtt</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>planeeritakse</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="ajavahemik, mille jooksul sooritatakse patsiendi heaks tervishoiutegevusi" href="healthcare&#32;activity&#32;period.html">tervishoiutegevuse periood</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>toimub ajal</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiukontaktiks kokkulepitud aeg" href="healthcare&#32;appointment.html">tervishoiutöötaja vastuvõtt</a>
+          </td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiukontaktiks kokkulepitud aeg" href="healthcare&#32;appointment.html">tervishoiutöötaja vastuvõtt</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>on kokkulepitud aeg</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="patsiendi ja meditsiinipersonali vaheline kokkupuude" href="contact.html">tervishoiukontakt</a>
+          </td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare appointment</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare appointment</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>healthcare appointment is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>healthcare appointment is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="healthcare appointment"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+87 [label="tervishoiutöötaja vastuvõtt" fontname="Cambria" tooltip="tervishoiukontaktiks kokkulepitud aeg" URL="/concept/term/healthcare appointment" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+72 [label="raviplaan" fontname="Cambria" tooltip="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" URL="/concept/term/care plan" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+81 [label="tervishoiutegevuse periood" fontname="Cambria" tooltip="ajavahemik, mille jooksul sooritatakse patsiendi heaks tervishoiutegevusi" URL="/concept/term/healthcare activity period" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+98 [label="tervishoiukontakt" fontname="Cambria" tooltip="patsiendi ja meditsiinipersonali vaheline kokkupuude" URL="/concept/term/contact" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+87 -> 72 [label="planeeritakse"; fontname="Cambria"]
+81 -> 87 [label="toimub ajal"; fontname="Cambria"]
+87 -> 98 [label="on kokkulepitud aeg"; fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

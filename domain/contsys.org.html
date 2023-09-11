@@ -1,0 +1,88 @@
+<html>
+  <header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/contsys.css">
+    <title>Mõiste valdkond „Contsys.org“</title>
+  </header>
+  <body>
+    <h1>Mõiste valdkond „Contsys.org“ (<em>contsys.org</em>)</h1>
+    <ul>
+      <li>
+        <a class="term" title="base component documenting the details of an attestation of a set of electronic health record components" href="../concept/term/attestation&#32;information.html">attestation information</a>
+        <em>base component documenting the details of an attestation of a set of electronic health record components</em>
+      </li>
+      <li>
+        <a class="term" title="documentation of the details of a revision of a base component" href="../concept/term/audit&#32;information.html">audit information</a>
+        <em>documentation of the details of a revision of a base component</em>
+      </li>
+      <li>
+        <a class="term" title="abstract class that include the properties common for all revisable classes included in EHR extract" href="../concept/term/base&#32;component.html">base component</a>
+        <em>abstract class that include the properties common for all revisable classes included in EHR extract</em>
+      </li>
+      <li>
+        <a class="term" title="structure component containing information composed during one clinical encounter or documentation session, and committed within one EHR" href="../concept/term/composition.html">composition</a>
+        <em>structure component containing information composed during one clinical encounter or documentation session, and committed within one EHR</em>
+      </li>
+      <li>
+        <a class="term" title="demographic information extracted for the purpose of being included in an EHR extract or an EHR audit log extract" href="../concept/term/demographic&#32;extract.html">demographic extract</a>
+        <em>demographic information extracted for the purpose of being included in an EHR extract or an EHR audit log extract</em>
+      </li>
+      <li>
+        <a class="term" title="structure component extracted from an EHR for the purpose of being communicated in an EHR extract as the target of one or more links" href="../concept/term/extracted&#32;component&#32;set.html">extracted component set</a>
+        <em>structure component extracted from an EHR for the purpose of being communicated in an EHR extract as the target of one or more links</em>
+      </li>
+      <li>
+        <a class="term" title="structure component used for creating hierarchical structures within an EHR extract and with compositions as leaf nodes" href="../concept/term/folder.html">folder</a>
+        <em>structure component used for creating hierarchical structures within an EHR extract and with compositions as leaf nodes</em>
+      </li>
+      <li>
+        <a class="term" title="base component that describes an association from information in an EHR extract to other information within that EHR extract" href="../concept/term/link.html">link</a>
+        <em>base component that describes an association from information in an EHR extract to other information within that EHR extract</em>
+      </li>
+      <li>
+        <a class="term" title="electronic health record component which contain one of more other electronic health record components" href="../concept/term/structure&#32;component.html">structure component</a>
+        <em>electronic health record component which contain one of more other electronic health record components</em>
+      </li>
+    </ul>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        label="Valdkond „contsys.org“"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+128 [label="elektrooniline terviseloo osa" fontname="Cambria" tooltip="terviseloo osa, mis sisaldab ainult elektroonilises vormis teavet" URL="/concept/term/electronic health record component" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+201 [label="folder" fontname="Cambria" tooltip="structure component used for creating hierarchical structures within an EHR extract and with compositions as leaf nodes" URL="/concept/term/folder" color="#000000" ]
+215 [label="composition" fontname="Cambria" tooltip="structure component containing information composed during one clinical encounter or documentation session, and committed within one EHR" URL="/concept/term/composition" color="#000000" ]
+217 [label="base component" fontname="Cambria" tooltip="abstract class that include the properties common for all revisable classes included in EHR extract" URL="/concept/term/base component" color="#000000" ]
+197 [label="structure component" fontname="Cambria" tooltip="electronic health record component which contain one of more other electronic health record components" URL="/concept/term/structure component" color="#000000" ]
+121 [label="elektrooniline terviseloo väljavõte" fontname="Cambria" tooltip="ainult elektroonilistest terviseloo osadest koosnev terviseloo väljavõte" URL="/concept/term/electronic health record extract" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+199 [label="link" fontname="Cambria" tooltip="base component that describes an association from information in an EHR extract to other information within that EHR extract" URL="/concept/term/link" color="#000000" ]
+219 [label="attestation information" fontname="Cambria" tooltip="base component documenting the details of an attestation of a set of electronic health record components" URL="/concept/term/attestation information" color="#000000" ]
+196 [label="extracted component set" fontname="Cambria" tooltip="structure component extracted from an EHR for the purpose of being communicated in an EHR extract as the target of one or more links" URL="/concept/term/extracted component set" color="#000000" ]
+209 [label="demographic extract" fontname="Cambria" tooltip="demographic information extracted for the purpose of being included in an EHR extract or an EHR audit log extract" URL="/concept/term/demographic extract" color="#000000" ]
+218 [label="audit information" fontname="Cambria" tooltip="documentation of the details of a revision of a base component" URL="/concept/term/audit information" color="#000000" ]
+128 -> 197 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+217 -> 199 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+197 -> 201 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+197 -> 215 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+217 -> 219 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+201 -> 121 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+217 -> 128 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

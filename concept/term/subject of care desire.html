@@ -1,0 +1,127 @@
+<html>
+  <header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>Patsiendi tahe (subject of care desire)</title>
+  </header>
+  <body>
+    <h1>Patsiendi tahe</h1>
+    <div>Termin: patsiendi tahe (<em>subject of care desire</em>
+      <a href="https://contsys.org/concept/subject_of_care_desire" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: patsiendi või patsiendi esindaja väljendatud tahe teatud tervishoiutegevuste sooritamiseks (<em>desire expressed by the subject of care or the subject of care proxy regarding the performance of certain healthcare activities</em>)</div>
+    <div>Valdkond: <a href="../../domain/responsibility.html">vastutus (<em>responsibility</em>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: In quality management [ISO 9000:2005] requirement is defined as “needs and expectations that is stated generally implied or obligatory". The expectations reflect the subject of care's desires.<br>
+                 (<em>In quality management [ISO 9000:2005] requirement is defined as “needs and expectations that is stated generally implied or obligatory". The expectations reflect the subject of care's desires.</em>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiu osapool isiku rollis; keegi, kes tahab saada, saab või on saanud tervishoiusüsteemis teenust" href="subject&#32;of&#32;care.html">patsient</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>väljendab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="patsiendi või patsiendi esindaja väljendatud tahe teatud tervishoiutegevuste sooritamiseks" href="subject&#32;of&#32;care&#32;desire.html">patsiendi tahe</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiu kolmas osapool, kellel on isiku roll koos õigusega otsustada patsiendi eest" href="subject&#32;of&#32;care&#32;proxy.html">patsiendi esindaja</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>väljendab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="patsiendi või patsiendi esindaja väljendatud tahe teatud tervishoiutegevuste sooritamiseks" href="subject&#32;of&#32;care&#32;desire.html">patsiendi tahe</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>subject of care desire</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>subject of care desire</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>subject of care desire is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>subject of care desire is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="subject of care desire"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+3 [label="patsient" fontname="Cambria" tooltip="tervishoiu osapool isiku rollis; keegi, kes tahab saada, saab või on saanud tervishoiusüsteemis teenust" URL="/concept/term/subject of care" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+114 [label="patsiendi tahe" fontname="Cambria" tooltip="patsiendi või patsiendi esindaja väljendatud tahe teatud tervishoiutegevuste sooritamiseks" URL="/concept/term/subject of care desire" color="#376fa6" style="filled,rounded" fillcolor="#E6EDF4" ]
+14 [label="patsiendi esindaja" fontname="Cambria" tooltip="tervishoiu kolmas osapool, kellel on isiku roll koos õigusega otsustada patsiendi eest" URL="/concept/term/subject of care proxy" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+3 -> 114 [label="väljendab"; fontname="Cambria"]
+14 -> 114 [label="väljendab"; fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

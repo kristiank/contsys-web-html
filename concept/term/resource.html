@@ -1,0 +1,107 @@
+<html>
+  <header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>Ressurss (resource)</title>
+  </header>
+  <body>
+    <h1>Ressurss</h1>
+    <div>Termin: ressurss (<em>resource</em>
+      <a href="https://contsys.org/concept/resource" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: protsessi (3.6.1) käigus kasutatav ja tarbitav vara (<em>asset that is utilized or consumed during the execution of a process</em>)</div>
+    <div>Valdkond: <a href="../../domain/terms&#32;and&#32;definitions.html">terminid ja määratlused (<em>terms and definitions</em>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: to entry: Resources may include diverse entities such as funding, personnel, facilities, capital equipment, tools, and utilities such as power, water, fuel and communication infrastructures.<br>
+                 (<em>to entry: Resources may include diverse entities such as funding, personnel, facilities, capital equipment, tools, and utilities such as power, water, fuel and communication infrastructures.</em>)</div>
+      <div>Märkus 2: to entry: Resources may be reusable, renewable or consumable.<br>
+                 (<em>to entry: Resources may be reusable, renewable or consumable.</em>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>resource</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>resource</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="tervishoiutegevuste sooritamiseks vajalik ressurss" href="healthcare&#32;resource.html">tervishoiuressurss</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="tervishoiuteenuse osutamise eest maksmiseks või teenuste hüvitamiseks ettenähtud ressurss" href="healthcare&#32;funds.html">tervishoiu rahalised vahendid</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>resource is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>resource is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="resource"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+177 [label="ressurss" fontname="Cambria" tooltip="protsessi (3.6.1) käigus kasutatav ja tarbitav vara" URL="/concept/term/resource" color="#000000" ]
+56 [label="tervishoiuressurss" fontname="Cambria" tooltip="tervishoiutegevuste sooritamiseks vajalik ressurss" URL="/concept/term/healthcare resource" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+61 [label="tervishoiu rahalised vahendid" fontname="Cambria" tooltip="tervishoiuteenuse osutamise eest maksmiseks või teenuste hüvitamiseks ettenähtud ressurss" URL="/concept/term/healthcare funds" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+177 -> 56 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+177 -> 61 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

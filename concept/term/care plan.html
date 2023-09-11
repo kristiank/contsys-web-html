@@ -1,0 +1,375 @@
+<html>
+  <header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>Raviplaan (care plan)</title>
+  </header>
+  <body>
+    <h1>Raviplaan</h1>
+    <div>Termin: raviplaan (<em>care plan</em>
+      <a href="https://contsys.org/concept/care_plan" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke (<em>dynamic, personalized plan including identified needed healthcare activities, health objectives and healthcare goals, relating to one or more specified health issues in a healthcare process</em>)</div>
+    <div>Valdkond: <a href="../../domain/planning.html">planeerimine (<em>planning</em>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: A care plan may be recorded in one or more health records.<br>
+                 (<em>A care plan may be recorded in one or more health records.</em>)</div>
+      <div>Märkus 2: A care plan could be subdivided from different perspectives by different constraints. One example is uniprofessional care plan, for example, a nursing care plan with the constraint of only one specific healthcare professional involved. Other examples of specific constraints for a care plan are: care plan to address one health issue, one health condition, one contact, one clinical process, healthcare activities to be performed by one healthcare provider, etc.<br>
+                 (<em>A care plan could be subdivided from different perspectives by different constraints. One example is uniprofessional care plan, for example, a nursing care plan with the constraint of only one specific healthcare professional involved. Other examples of specific constraints for a care plan are: care plan to address one health issue, one health condition, one contact, one clinical process, healthcare activities to be performed by one healthcare provider, etc.</em>)</div>
+      <div>Märkus 3: Care plans are reviewed repeatedly during a healthcare process, each review based on a new healthcare needs assessment.<br>
+                 (<em>Care plans are reviewed repeatedly during a healthcare process, each review based on a new healthcare needs assessment.</em>)</div>
+      <div>Märkus 4: The healthcare activities in a care plan follow a life cycle. Examples of statuses of such a life cycle are: 'planned', 'performed', 'cancelled', etc.; all of these statuses are included in the care plan.<br>
+                 (<em>The healthcare activities in a care plan follow a life cycle. Examples of statuses of such a life cycle are: 'planned', 'performed', 'cancelled', etc.; all of these statuses are included in the care plan.</em>)</div>
+      <div>Märkus 5: In EN 13940-1:2007 programme of care was the preferred term for this concept.<br>
+                 (<em>In EN 13940-1:2007 programme of care was the preferred term for this concept.</em>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoius osalev organisatsioon või isik" href="healthcare&#32;actor.html">tervishoiu osapool</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>rakendab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>käsitleb</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="vähemalt ühe tervishoiu osapoole poolt kindlaks tehtud, patsiendi tervisega seotud mure kirjeldus" href="health&#32;issue.html">tervisemure</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>käsitleb</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="vähemalt ühe tervishoiu osapoole määratud sisuline seos terviseküsimuste vahel" href="health&#32;thread.html">terviselõim</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiutoiming, mille käigus muudetakse raviplaanis olevate tervishoiutegevuste staatust" href="healthcare&#32;activity&#32;management.html">tervishoiutegevuse juhtimine</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>muudab tervishoiutegevuste staatust</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>on tulemus</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiutegevuse juhtimise osa, mil toimub raviplaani koostamine või muutmine" href="healthcare&#32;planning.html">ravitegevuse planeerimine</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="omavahel seotud või vastastikku mõjutavad tervishoiutegevused, mis muudavad sisendid väljunditeks" href="healthcare&#32;process.html">tervishoiuprotsess</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>kavandatakse</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>põhineb</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="taaskasutatav sisu ja struktuur potentsiaalse raviplaani koostamiseks ühtsetel alustel" href="core&#32;care&#32;plan.html">raviplaani standard</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>registreeritakse</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="patsiendi tervist ja ravi puudutav andmehoidla" href="health&#32;record.html">terviselugu</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>täidab eesmärki</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="ühe või mitme tervishoiutegevuse soovitud tulemus, mida peetakse konkreetse tervise-eesmärgi saavutamise vaheetapiks" href="healthcare&#32;goal.html">tervishoiutegevuse eesmärk</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>täidab eesmärki</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervisevajadusi käsitleva tervishoiuprotsessi soovitud lõpptulemus" href="health&#32;objective.html">tervise-eesmärk</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>kohaldab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="kohandatud ravijuhend" href="protocol.html">protokoll</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>järgib</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="süstemaatiliselt väljatöötatud soovituste kogum, mis aitab tervishoiutöötajatel teha otsuseid konkreetsete tervisemuredega seotud tervishoiutegevuste kohta" href="clinical&#32;guideline.html">ravijuhend</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiukontaktiks kokkulepitud aeg" href="healthcare&#32;appointment.html">tervishoiutöötaja vastuvõtt</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>planeeritakse</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+          <td>0..1</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>care plan</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>care plan</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="raviplaan, mis hõlmab selliseid tervishoiuteenuse osutaja tegevusi, mida viivad läbi ühe ja sama tervishoiuteenuse osutamise õigusega tervishoiutöötajad" href="uniprofessional&#32;care&#32;plan.html">ühe eriala raviplaan</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="raviplaan, mis hõlmab selliseid tervishoiuteenuse osutaja tegevusi, mida viivad läbi erineva tervishoiuteenuse osutamise õigusega tervishoiutöötajad" href="multi-professional&#32;care&#32;plan.html">mitme eriala raviplaan</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>care plan is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" href="healthcare&#32;activity.html">tervishoiutegevus</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="tervishoiutegevuste hulk" href="healthcare&#32;activities&#32;bundle.html">tervishoiutegevuste kogum</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>care plan is a component of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="care plan"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+7 [label="tervishoiu osapool" fontname="Cambria" tooltip="tervishoius osalev organisatsioon või isik" URL="/concept/term/healthcare actor" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+72 [label="raviplaan" fontname="Cambria" tooltip="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" URL="/concept/term/care plan" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+15 [label="tervisemure" fontname="Cambria" tooltip="vähemalt ühe tervishoiu osapoole poolt kindlaks tehtud, patsiendi tervisega seotud mure kirjeldus" URL="/concept/term/health issue" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+16 [label="terviselõim" fontname="Cambria" tooltip="vähemalt ühe tervishoiu osapoole määratud sisuline seos terviseküsimuste vahel" URL="/concept/term/health thread" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+50 [label="tervishoiutegevuse juhtimine" fontname="Cambria" tooltip="tervishoiutoiming, mille käigus muudetakse raviplaanis olevate tervishoiutegevuste staatust" URL="/concept/term/healthcare activity management" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+53 [label="ravitegevuse planeerimine" fontname="Cambria" tooltip="tervishoiutegevuse juhtimise osa, mil toimub raviplaani koostamine või muutmine" URL="/concept/term/healthcare planning" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+63 [label="tervishoiuprotsess" fontname="Cambria" tooltip="omavahel seotud või vastastikku mõjutavad tervishoiutegevused, mis muudavad sisendid väljunditeks" URL="/concept/term/healthcare process" color="#b43232" style="filled,rounded" fillcolor="#F6E5E5" ]
+71 [label="raviplaani standard" fontname="Cambria" tooltip="taaskasutatav sisu ja struktuur potentsiaalse raviplaani koostamiseks ühtsetel alustel" URL="/concept/term/core care plan" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+129 [label="terviselugu" fontname="Cambria" tooltip="patsiendi tervist ja ravi puudutav andmehoidla" URL="/concept/term/health record" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+75 [label="tervishoiutegevuse eesmärk" fontname="Cambria" tooltip="ühe või mitme tervishoiutegevuse soovitud tulemus, mida peetakse konkreetse tervise-eesmärgi saavutamise vaheetapiks" URL="/concept/term/healthcare goal" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+76 [label="tervise-eesmärk" fontname="Cambria" tooltip="tervisevajadusi käsitleva tervishoiuprotsessi soovitud lõpptulemus" URL="/concept/term/health objective" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+77 [label="protokoll" fontname="Cambria" tooltip="kohandatud ravijuhend" URL="/concept/term/protocol" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+78 [label="ravijuhend" fontname="Cambria" tooltip="süstemaatiliselt väljatöötatud soovituste kogum, mis aitab tervishoiutöötajatel teha otsuseid konkreetsete tervisemuredega seotud tervishoiutegevuste kohta" URL="/concept/term/clinical guideline" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+87 [label="tervishoiutöötaja vastuvõtt" fontname="Cambria" tooltip="tervishoiukontaktiks kokkulepitud aeg" URL="/concept/term/healthcare appointment" color="#085221" style="filled,rounded" fillcolor="#E0E9E3" ]
+39 [label="tervishoiutegevus" fontname="Cambria" tooltip="tegevus, mis on otseselt või kaudselt mõeldud terviseoleku parandamiseks või säilitamiseks" URL="/concept/term/healthcare activity" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+74 [label="tervishoiutegevuste kogum" fontname="Cambria" tooltip="tervishoiutegevuste hulk" URL="/concept/term/healthcare activities bundle" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+73 [label="ühe eriala raviplaan" fontname="Cambria" tooltip="raviplaan, mis hõlmab selliseid tervishoiuteenuse osutaja tegevusi, mida viivad läbi ühe ja sama tervishoiuteenuse osutamise õigusega tervishoiutöötajad" URL="/concept/term/uniprofessional care plan" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+79 [label="mitme eriala raviplaan" fontname="Cambria" tooltip="raviplaan, mis hõlmab selliseid tervishoiuteenuse osutaja tegevusi, mida viivad läbi erineva tervishoiuteenuse osutamise õigusega tervishoiutöötajad" URL="/concept/term/multi-professional care plan" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+7 -> 72 [label="rakendab"; fontname="Cambria"]
+72 -> 15 [label="käsitleb"; fontname="Cambria"]
+72 -> 16 [label="käsitleb"; fontname="Cambria"]
+50 -> 72 [label="muudab tervishoiutegevuste staatust"; fontname="Cambria"]
+72 -> 53 [label="on tulemus"; fontname="Cambria"]
+63 -> 72 [label="kavandatakse"; fontname="Cambria"]
+72 -> 71 [label="põhineb"; fontname="Cambria"]
+72 -> 129 [label="registreeritakse"; fontname="Cambria"]
+72 -> 75 [label="täidab eesmärki"; fontname="Cambria"]
+72 -> 76 [label="täidab eesmärki"; fontname="Cambria"]
+72 -> 77 [label="kohaldab"; fontname="Cambria"]
+72 -> 78 [label="järgib"; fontname="Cambria"]
+87 -> 72 [label="planeeritakse"; fontname="Cambria"]
+72 -> 73 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+72 -> 79 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+72 -> 72 [arrowtail="odiamond" dir="back" color="blue" fontname="Cambria"]
+72 -> 39 [arrowtail="odiamond" dir="back" color="blue" fontname="Cambria"]
+72 -> 74 [arrowtail="odiamond" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

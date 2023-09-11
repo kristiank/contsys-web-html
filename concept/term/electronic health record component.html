@@ -1,0 +1,117 @@
+<html>
+  <header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>Elektrooniline terviseloo osa (electronic health record component)</title>
+  </header>
+  <body>
+    <h1>Elektrooniline terviseloo osa</h1>
+    <div>Termin: elektrooniline terviseloo osa (<em>electronic health record component</em>
+      <a href="https://contsys.org/concept/electronic_health_record_component" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: terviseloo osa, mis sisaldab ainult elektroonilises vormis teavet (<em>health record component which only includes information in electronic format</em>)</div>
+    <div>Valdkond: <a href="../../domain/information.html">teabehaldus (<em>information</em>)</a>
+    </div>
+    <div></div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>electronic health record component</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="selline osa terviseloost, mida saab viitamise ja muudatuste jälgimise eesmärgil tuvastada" href="health&#32;record&#32;component.html">terviseloo osa</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="abstract class that include the properties common for all revisable classes included in EHR extract" href="base&#32;component.html">base component</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>electronic health record component</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="electronic health record component which contain one of more other electronic health record components" href="structure&#32;component.html">structure component</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>electronic health record component is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>electronic health record component is a component of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="ainult elektroonilistest terviseloo osadest koosnev terviseloo väljavõte" href="electronic&#32;health&#32;record&#32;extract.html">elektrooniline terviseloo väljavõte</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="electronic health record component"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+128 [label="elektrooniline terviseloo osa" fontname="Cambria" tooltip="terviseloo osa, mis sisaldab ainult elektroonilises vormis teavet" URL="/concept/term/electronic health record component" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+121 [label="elektrooniline terviseloo väljavõte" fontname="Cambria" tooltip="ainult elektroonilistest terviseloo osadest koosnev terviseloo väljavõte" URL="/concept/term/electronic health record extract" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+125 [label="terviseloo osa" fontname="Cambria" tooltip="selline osa terviseloost, mida saab viitamise ja muudatuste jälgimise eesmärgil tuvastada" URL="/concept/term/health record component" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+217 [label="base component" fontname="Cambria" tooltip="abstract class that include the properties common for all revisable classes included in EHR extract" URL="/concept/term/base component" color="#000000" ]
+197 [label="structure component" fontname="Cambria" tooltip="electronic health record component which contain one of more other electronic health record components" URL="/concept/term/structure component" color="#000000" ]
+125 -> 128 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+217 -> 128 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+128 -> 197 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

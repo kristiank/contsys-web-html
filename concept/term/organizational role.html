@@ -1,0 +1,110 @@
+<html>
+  <header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>Organizational role (organizational role)</title>
+  </header>
+  <body>
+    <h1>Organizational role</h1>
+    <div>Termin: organizational role (<em>organizational role</em>
+      <a href="https://contsys.org/concept/organizational_role" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: role undertaken by an organization (<em>role undertaken by an organization</em>)</div>
+    <div>Valdkond: <a href="../../domain/terms&#32;and&#32;definitions.html">terminid ja määratlused (<em>terms and definitions</em>)</a>
+    </div>
+    <div></div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>organizational role</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="funktsioon või positsioon" href="role.html">roll</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>organizational role</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="tervishoiuteenuse osutaja, millel on organisatsiooni roll" href="healthcare&#32;organization.html">tervishoiuorganisatsioon</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="tervishoiu kolmas osapool, millel on organisatsiooni roll" href="healthcare&#32;supporting&#32;organization.html">tervishoiu tugiorganisatsioon</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>organizational role is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>organizational role is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="organizational role"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+5 [label="organizational role" fontname="Cambria" tooltip="role undertaken by an organization" URL="/concept/term/organizational role" color="#000000" ]
+152 [label="roll" fontname="Cambria" tooltip="funktsioon või positsioon" URL="/concept/term/role" color="#000000" ]
+10 [label="tervishoiuorganisatsioon" fontname="Cambria" tooltip="tervishoiuteenuse osutaja, millel on organisatsiooni roll" URL="/concept/term/healthcare organization" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+4 [label="tervishoiu tugiorganisatsioon" fontname="Cambria" tooltip="tervishoiu kolmas osapool, millel on organisatsiooni roll" URL="/concept/term/healthcare supporting organization" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+152 -> 5 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+5 -> 4 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+5 -> 10 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

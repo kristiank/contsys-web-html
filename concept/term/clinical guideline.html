@@ -1,0 +1,191 @@
+<html>
+  <header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>Ravijuhend (clinical guideline)</title>
+  </header>
+  <body>
+    <h1>Ravijuhend</h1>
+    <div>Termin: ravijuhend (<em>clinical guideline</em>
+      <a href="https://contsys.org/concept/clinical_guideline" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: süstemaatiliselt väljatöötatud soovituste kogum, mis aitab tervishoiutöötajatel teha otsuseid konkreetsete tervisemuredega seotud tervishoiutegevuste kohta (<em>set of systematically developed statements to assist the decisions made by healthcare actors about healthcare activities to be performed with regard to specified health issues</em>)</div>
+    <div>Valdkond: <a href="../../domain/planning.html">planeerimine (<em>planning</em>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: Clinical guidelines are usually rather generic and they concern no actual subject of care in particular. While they generally reflect a broad statement of good practice, they may sometimes include multiple operational details.<br>
+                 (<em>Clinical guidelines are usually rather generic and they concern no actual subject of care in particular. While they generally reflect a broad statement of good practice, they may sometimes include multiple operational details.</em>)</div>
+      <div>Märkus 2: Clinical guidelines should be structured and contain standard criteria and indicators for measurement.<br>
+                 (<em>Clinical guidelines should be structured and contain standard criteria and indicators for measurement.</em>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoius osalev organisatsioon või isik" href="healthcare&#32;actor.html">tervishoiu osapool</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>tugineb otsustamisel</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="süstemaatiliselt väljatöötatud soovituste kogum, mis aitab tervishoiutöötajatel teha otsuseid konkreetsete tervisemuredega seotud tervishoiutegevuste kohta" href="clinical&#32;guideline.html">ravijuhend</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="süstemaatiliselt väljatöötatud soovituste kogum, mis aitab tervishoiutöötajatel teha otsuseid konkreetsete tervisemuredega seotud tervishoiutegevuste kohta" href="clinical&#32;guideline.html">ravijuhend</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>keskendub</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="vähemalt ühe tervishoiu osapoole poolt kindlaks tehtud, patsiendi tervisega seotud mure kirjeldus" href="health&#32;issue.html">tervisemure</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiutegevuse juhtimise osa, mil toimub raviplaani koostamine või muutmine" href="healthcare&#32;planning.html">ravitegevuse planeerimine</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>põhineb</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="süstemaatiliselt väljatöötatud soovituste kogum, mis aitab tervishoiutöötajatel teha otsuseid konkreetsete tervisemuredega seotud tervishoiutegevuste kohta" href="clinical&#32;guideline.html">ravijuhend</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiutegevuste kava, mis kajastab ravistandardite sisu" href="clinical&#32;pathway.html">raviteekond</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>viitab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="süstemaatiliselt väljatöötatud soovituste kogum, mis aitab tervishoiutöötajatel teha otsuseid konkreetsete tervisemuredega seotud tervishoiutegevuste kohta" href="clinical&#32;guideline.html">ravijuhend</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>järgib</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="süstemaatiliselt väljatöötatud soovituste kogum, mis aitab tervishoiutöötajatel teha otsuseid konkreetsete tervisemuredega seotud tervishoiutegevuste kohta" href="clinical&#32;guideline.html">ravijuhend</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>clinical guideline</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>clinical guideline</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="kohandatud ravijuhend" href="protocol.html">protokoll</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>clinical guideline is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>clinical guideline is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="clinical guideline"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+7 [label="tervishoiu osapool" fontname="Cambria" tooltip="tervishoius osalev organisatsioon või isik" URL="/concept/term/healthcare actor" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+78 [label="ravijuhend" fontname="Cambria" tooltip="süstemaatiliselt väljatöötatud soovituste kogum, mis aitab tervishoiutöötajatel teha otsuseid konkreetsete tervisemuredega seotud tervishoiutegevuste kohta" URL="/concept/term/clinical guideline" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+15 [label="tervisemure" fontname="Cambria" tooltip="vähemalt ühe tervishoiu osapoole poolt kindlaks tehtud, patsiendi tervisega seotud mure kirjeldus" URL="/concept/term/health issue" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+53 [label="ravitegevuse planeerimine" fontname="Cambria" tooltip="tervishoiutegevuse juhtimise osa, mil toimub raviplaani koostamine või muutmine" URL="/concept/term/healthcare planning" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+70 [label="raviteekond" fontname="Cambria" tooltip="tervishoiutegevuste kava, mis kajastab ravistandardite sisu" URL="/concept/term/clinical pathway" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+72 [label="raviplaan" fontname="Cambria" tooltip="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" URL="/concept/term/care plan" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+77 [label="protokoll" fontname="Cambria" tooltip="kohandatud ravijuhend" URL="/concept/term/protocol" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+7 -> 78 [label="tugineb otsustamisel"; fontname="Cambria"]
+78 -> 15 [label="keskendub"; fontname="Cambria"]
+53 -> 78 [label="põhineb"; fontname="Cambria"]
+70 -> 78 [label="viitab"; fontname="Cambria"]
+72 -> 78 [label="järgib"; fontname="Cambria"]
+78 -> 77 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

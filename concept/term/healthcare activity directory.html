@@ -1,0 +1,131 @@
+<html>
+  <header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>Tervishoiutegevuste loetelu (healthcare activity directory)</title>
+  </header>
+  <body>
+    <h1>Tervishoiutegevuste loetelu</h1>
+    <div>Termin: tervishoiutegevuste loetelu (<em>healthcare activity directory</em>
+      <a href="https://contsys.org/concept/healthcare_activity_directory" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: tervishoiuteenuse osutaja tervishoiutegevuste loetelu (<em>directory of the healthcare activities offered by a healthcare provider</em>)</div>
+    <div>Valdkond: <a href="../../domain/activity.html">tegevused (<em>activity</em>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: The healthcare activity directory includes those healthcare activities that the healthcare provider's healthcare personnel can perform, not those that are actually available at the time of healthcare delivery. The ability to perform a healthcare activity implies that the healthcare provider has the necessary resources.<br>
+                 (<em>The healthcare activity directory includes those healthcare activities that the healthcare provider's healthcare personnel can perform, not those that are actually available at the time of healthcare delivery. The ability to perform a healthcare activity implies that the healthcare provider has the necessary resources.</em>)</div>
+      <div>Märkus 2: The healthcare activity directory is related to the management of healthcare processes.<br>
+                 (<em>The healthcare activity directory is related to the management of healthcare processes.</em>)</div>
+      <div>Märkus 3: Healthcare providers may also have a healthcare service directory This directory includes the services that can be delivered by healthcare processes using the healthcare activities included in the healthcare activity directory.<br>
+                 (<em>Healthcare providers may also have a healthcare service directory This directory includes the services that can be delivered by healthcare processes using the healthcare activities included in the healthcare activity directory.</em>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiu osapool, kellele saab määrata üht või enamat ravivolitust" href="healthcare&#32;provider.html">tervishoiuteenuse osutaja</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>omab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutaja tervishoiutegevuste loetelu" href="healthcare&#32;activity&#32;directory.html">tervishoiutegevuste loetelu</a>
+          </td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutaja tervishoiutegevuste loetelu" href="healthcare&#32;activity&#32;directory.html">tervishoiutegevuste loetelu</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>sisaldab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutaja tervishoiutegevus" href="healthcare&#32;provider&#32;activity.html">tervishoiuteenuse osutaja tegevus</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare activity directory</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>healthcare activity directory</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>healthcare activity directory is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>healthcare activity directory is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="healthcare activity directory"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+8 [label="tervishoiuteenuse osutaja" fontname="Cambria" tooltip="tervishoiu osapool, kellele saab määrata üht või enamat ravivolitust" URL="/concept/term/healthcare provider" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+44 [label="tervishoiutegevuste loetelu" fontname="Cambria" tooltip="tervishoiuteenuse osutaja tervishoiutegevuste loetelu" URL="/concept/term/healthcare activity directory" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+38 [label="tervishoiuteenuse osutaja tegevus" fontname="Cambria" tooltip="tervishoiuteenuse osutaja tervishoiutegevus" URL="/concept/term/healthcare provider activity" color="#CC0014" style="filled,rounded" fillcolor="#F8DFE2" ]
+8 -> 44 [label="omab"; fontname="Cambria"]
+44 -> 38 [label="sisaldab"; fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

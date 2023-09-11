@@ -1,0 +1,232 @@
+<html>
+  <header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>Patsiendi esindaja (subject of care proxy)</title>
+  </header>
+  <body>
+    <h1>Patsiendi esindaja</h1>
+    <div>Termin: patsiendi esindaja (<em>subject of care proxy</em>
+      <a href="https://contsys.org/concept/subject_of_care_proxy" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: tervishoiu kolmas osapool, kellel on isiku roll koos õigusega otsustada patsiendi eest (<em>healthcare third party having person role with the right to take decisions on behalf of the subject of care</em>)</div>
+    <div>Valdkond: <a href="../../domain/actor.html">osapooled (<em>actor</em>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: In ISO/TS 21298 subject of care agent is the preferred term for this concept.<br>
+                 (<em>In ISO/TS 21298 subject of care agent is the preferred term for this concept.</em>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiu kolmas osapool, kellel on isiku roll koos õigusega otsustada patsiendi eest" href="subject&#32;of&#32;care&#32;proxy.html">patsiendi esindaja</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>omab õigust otsustada eest</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiu osapool isiku rollis; keegi, kes tahab saada, saab või on saanud tervishoiusüsteemis teenust" href="subject&#32;of&#32;care.html">patsient</a>
+          </td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiu kolmas osapool, kellel on isiku roll koos õigusega otsustada patsiendi eest" href="subject&#32;of&#32;care&#32;proxy.html">patsiendi esindaja</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>omab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="patsiendi või patsiendi esindaja võime anda teadlikku nõusolekut (või abist keelduda)" href="consent&#32;competence.html">nõusolekuvõime</a>
+          </td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiu kolmas osapool, kellel on isiku roll koos õigusega otsustada patsiendi eest" href="subject&#32;of&#32;care&#32;proxy.html">patsiendi esindaja</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>annab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="nõusolekuvõimega patsiendi või patsiendi esindaja vabatahtlikult antud luba sooritada tervishoiutegevusi, kui nende eesmärgist ja võimalikest tagajärgedest on teavitatud" href="informed&#32;consent.html">teadlik nõusolek</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiu kolmas osapool, kellel on isiku roll koos õigusega otsustada patsiendi eest" href="subject&#32;of&#32;care&#32;proxy.html">patsiendi esindaja</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>avaldab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiutegevustest keeldumine" href="dissent.html">abist keeldumine</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiu kolmas osapool, kellel on isiku roll koos õigusega otsustada patsiendi eest" href="subject&#32;of&#32;care&#32;proxy.html">patsiendi esindaja</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>väljendab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="patsiendi või patsiendi esindaja väljendatud tahe teatud tervishoiutegevuste sooritamiseks" href="subject&#32;of&#32;care&#32;desire.html">patsiendi tahe</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiu kolmas osapool, kellel on isiku roll koos õigusega otsustada patsiendi eest" href="subject&#32;of&#32;care&#32;proxy.html">patsiendi esindaja</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>säilitab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="terviselugu, mida haldab ja hoiab korras patsient või patsiendi esindaja" href="personal&#32;health&#32;record.html">isiklik terviselugu</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="ravitaotluse ajendiks olev patsiendi või patsiendi esindaja arusaam tervisevajadustest" href="reason&#32;for&#32;demand&#32;for&#32;care.html">ravitaotluse põhjus</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>väljendatakse poolt</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiu kolmas osapool, kellel on isiku roll koos õigusega otsustada patsiendi eest" href="subject&#32;of&#32;care&#32;proxy.html">patsiendi esindaja</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>subject of care proxy</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="isiku (3.3.4) roll (3.3.5)" href="person&#32;role.html">isiku roll</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a class="term" title="tervishoiu osapool, kes ei ole tervishoiuteenuse osutaja või patsient" href="healthcare&#32;third&#32;party.html">tervishoiu kolmas osapool</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>subject of care proxy</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>subject of care proxy is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>subject of care proxy is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="subject of care proxy"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+14 [label="patsiendi esindaja" fontname="Cambria" tooltip="tervishoiu kolmas osapool, kellel on isiku roll koos õigusega otsustada patsiendi eest" URL="/concept/term/subject of care proxy" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+3 [label="patsient" fontname="Cambria" tooltip="tervishoiu osapool isiku rollis; keegi, kes tahab saada, saab või on saanud tervishoiusüsteemis teenust" URL="/concept/term/subject of care" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+105 [label="nõusolekuvõime" fontname="Cambria" tooltip="patsiendi või patsiendi esindaja võime anda teadlikku nõusolekut (või abist keelduda)" URL="/concept/term/consent competence" color="#376fa6" style="filled,rounded" fillcolor="#E6EDF4" ]
+106 [label="teadlik nõusolek" fontname="Cambria" tooltip="nõusolekuvõimega patsiendi või patsiendi esindaja vabatahtlikult antud luba sooritada tervishoiutegevusi, kui nende eesmärgist ja võimalikest tagajärgedest on teavitatud" URL="/concept/term/informed consent" color="#376fa6" style="filled,rounded" fillcolor="#E6EDF4" ]
+113 [label="abist keeldumine" fontname="Cambria" tooltip="tervishoiutegevustest keeldumine" URL="/concept/term/dissent" color="#376fa6" style="filled,rounded" fillcolor="#E6EDF4" ]
+114 [label="patsiendi tahe" fontname="Cambria" tooltip="patsiendi või patsiendi esindaja väljendatud tahe teatud tervishoiutegevuste sooritamiseks" URL="/concept/term/subject of care desire" color="#376fa6" style="filled,rounded" fillcolor="#E6EDF4" ]
+132 [label="isiklik terviselugu" fontname="Cambria" tooltip="terviselugu, mida haldab ja hoiab korras patsient või patsiendi esindaja" URL="/concept/term/personal health record" color="#d88d1f" style="filled,rounded" fillcolor="#FAF1E3" ]
+108 [label="ravitaotluse põhjus" fontname="Cambria" tooltip="ravitaotluse ajendiks olev patsiendi või patsiendi esindaja arusaam tervisevajadustest" URL="/concept/term/reason for demand for care" color="#376fa6" style="filled,rounded" fillcolor="#E6EDF4" ]
+151 [label="isiku roll" fontname="Cambria" tooltip="isiku (3.3.4) roll (3.3.5)" URL="/concept/term/person role" color="#000000" ]
+9 [label="tervishoiu kolmas osapool" fontname="Cambria" tooltip="tervishoiu osapool, kes ei ole tervishoiuteenuse osutaja või patsient" URL="/concept/term/healthcare third party" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+14 -> 3 [label="omab õigust otsustada eest"; fontname="Cambria"]
+14 -> 105 [label="omab"; fontname="Cambria"]
+14 -> 106 [label="annab"; fontname="Cambria"]
+14 -> 113 [label="avaldab"; fontname="Cambria"]
+14 -> 114 [label="väljendab"; fontname="Cambria"]
+14 -> 132 [label="säilitab"; fontname="Cambria"]
+108 -> 14 [label="väljendatakse poolt"; fontname="Cambria"]
+9 -> 14 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+151 -> 14 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

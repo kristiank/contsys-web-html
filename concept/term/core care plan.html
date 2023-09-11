@@ -1,0 +1,149 @@
+<html>
+  <header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>Raviplaani standard (core care plan)</title>
+  </header>
+  <body>
+    <h1>Raviplaani standard</h1>
+    <div>Termin: raviplaani standard (<em>core care plan</em>
+      <a href="https://contsys.org/concept/core_care_plan" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: taaskasutatav sisu ja struktuur potentsiaalse raviplaani koostamiseks ühtsetel alustel (<em>reusable content and structure for a potential care plan for a specified set of circumstances</em>)</div>
+    <div>Valdkond: <a href="../../domain/planning.html">planeerimine (<em>planning</em>)</a>
+    </div>
+    <div>
+      <div>Märkus 1: A core care plan is usually based upon knowledge in clinical guidelines (including protocols).<br>
+                 (<em>A core care plan is usually based upon knowledge in clinical guidelines (including protocols).</em>)</div>
+      <div>Märkus 2: Core care plans can be applied in healthcare planning as a clinical process management method.<br>
+                 (<em>Core care plans can be applied in healthcare planning as a clinical process management method.</em>)</div>
+      <div>Märkus 3: A core care plan may include advanced formulated schemes for recommended healthcare activities.<br>
+                 (<em>A core care plan may include advanced formulated schemes for recommended healthcare activities.</em>)</div>
+    </div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiuteenuse osutaja, millel on organisatsiooni roll" href="healthcare&#32;organization.html">tervishoiuorganisatsioon</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>võtab kasutusele</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="taaskasutatav sisu ja struktuur potentsiaalse raviplaani koostamiseks ühtsetel alustel" href="core&#32;care&#32;plan.html">raviplaani standard</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..1</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="tervishoiutegevuste kava, mis kajastab ravistandardite sisu" href="clinical&#32;pathway.html">raviteekond</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>kajastab</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="taaskasutatav sisu ja struktuur potentsiaalse raviplaani koostamiseks ühtsetel alustel" href="core&#32;care&#32;plan.html">raviplaani standard</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" href="care&#32;plan.html">raviplaan</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>põhineb</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="taaskasutatav sisu ja struktuur potentsiaalse raviplaani koostamiseks ühtsetel alustel" href="core&#32;care&#32;plan.html">raviplaani standard</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>core care plan</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>core care plan</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>core care plan is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>core care plan is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="core care plan"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+10 [label="tervishoiuorganisatsioon" fontname="Cambria" tooltip="tervishoiuteenuse osutaja, millel on organisatsiooni roll" URL="/concept/term/healthcare organization" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+71 [label="raviplaani standard" fontname="Cambria" tooltip="taaskasutatav sisu ja struktuur potentsiaalse raviplaani koostamiseks ühtsetel alustel" URL="/concept/term/core care plan" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+70 [label="raviteekond" fontname="Cambria" tooltip="tervishoiutegevuste kava, mis kajastab ravistandardite sisu" URL="/concept/term/clinical pathway" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+72 [label="raviplaan" fontname="Cambria" tooltip="dünaamiline isikustatud plaan, mis hõlmab tervishoiuprotsessis ühe või mitme tervisemurega seotud vajaminevaid tervishoiutegevusi, tervise- ja tervishoiueesmärke" URL="/concept/term/care plan" color="#6699cc" style="filled,rounded" fillcolor="#ECF2F8" ]
+10 -> 71 [label="võtab kasutusele"; fontname="Cambria"]
+70 -> 71 [label="kajastab"; fontname="Cambria"]
+72 -> 71 [label="põhineb"; fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>

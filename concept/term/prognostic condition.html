@@ -1,0 +1,132 @@
+<html>
+  <header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/contsys.css">
+    <title>Ennustatav seisund (prognostic condition)</title>
+  </header>
+  <body>
+    <h1>Ennustatav seisund</h1>
+    <div>Termin: ennustatav seisund (<em>prognostic condition</em>
+      <a href="https://contsys.org/concept/prognostic_condition" title="Vaata terminit contsys.org lehel" target="_blank">⧉</a>)</div>
+    <div>Määratlus: võimalik seisund, mis väljendab tervishoiutöötajate hinnangul oodatavat terviseolekut (<em>potential health condition representing the expected course of a health state as assessed by healthcare professionals</em>)</div>
+    <div>Valdkond: <a href="../../domain/matter.html">asjaolud (<em>matter</em>)</a>
+    </div>
+    <div></div>
+    <table>
+      <script type="module" src="../../static/component-editelement.js"></script>
+      <script src="../../static/contsys.js"></script>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Seose algus</th>
+          <th>Seos</th>
+          <th>Seose lõpp</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>1..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="meditsiinipersonali hulka kuuluv isik, kellel on antud jurisdiktsioonis tervishoiutöötajana tegutsemise õigus" href="healthcare&#32;professional.html">tervishoiutöötaja</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>teeb kindlaks</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="võimalik seisund, mis väljendab tervishoiutöötajate hinnangul oodatavat terviseolekut" href="prognostic&#32;condition.html">ennustatav seisund</a>
+          </td>
+          <td>0..*</td>
+        </tr>
+        <tr>
+          <!-- <td>{$record/entry[@name="from id"]/text()}</td>  -->
+          <td>0..*</td>
+          <!-- <td>{$record/entry[@name="from multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="võimalik seisund, mis väljendab tervishoiutöötajate hinnangul oodatavat terviseolekut" href="prognostic&#32;condition.html">ennustatav seisund</a>
+          </td>
+          <!-- <td>{$record/entry[@name="english association"]/text()}</td> -->
+          <td>põhineb</td>
+          <!-- <td>{$record/entry[@name="to id"]/text()}</td> -->
+          <!-- <td>{$record/entry[@name="to multiplicity label"]/text()}</td> -->
+          <td>
+            <a class="term" title="täheldatud seisund, mida tervishoiutöötaja on hinnanud seoses terviseoleku tekke, kulu, raskuse või mõjuga" href="professionally&#32;assessed&#32;condition.html">tervishoiutöötaja hinnatud seisund</a>
+          </td>
+          <td>1..*</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="specialization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>prognostic condition</em> is a specialization of</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a class="term" title="tervisehoiu osapoole kirjeldatud võimalik tuleviku või praegune terviseseisund" href="potential&#32;health&#32;condition.html">võimalik seisund</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="generalization-of">
+      <thead>
+        <tr>
+          <th>
+            <em>prognostic condition</em> is a generalization of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="aggregation-of">
+      <thead>
+        <tr>
+          <th>prognostic condition is an aggregation of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <table class="component-of">
+      <thead>
+        <tr>
+          <th>prognostic condition is a component of</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="graph-placeholder">
+      <script src="http://d3js.org/d3.v5.min.js"></script>
+      <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js" type="javascript/worker"></script>
+      <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+      <div id="graph" style="text-align: center;"></div>
+      <script>d3.select("#graph").graphviz().renderDot(`
+digraph {
+        fontname="Cambria"
+        #label="prognostic condition"
+        layout="neato"
+        #size="8.8 12" # Keep within 8.8" wide, 12" deep
+        sep=0.3
+        outputmode=edgefirst
+        remincross=true
+        splines=curved
+        overlap=false
+        node [shape=box style=rounded] # Defines the common node specification
+        
+        # Diagram specific parameters - override any above
+1 [label="tervishoiutöötaja" fontname="Cambria" tooltip="meditsiinipersonali hulka kuuluv isik, kellel on antud jurisdiktsioonis tervishoiutöötajana tegutsemise õigus" URL="/concept/term/healthcare professional" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+23 [label="ennustatav seisund" fontname="Cambria" tooltip="võimalik seisund, mis väljendab tervishoiutöötajate hinnangul oodatavat terviseolekut" URL="/concept/term/prognostic condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+19 [label="tervishoiutöötaja hinnatud seisund" fontname="Cambria" tooltip="täheldatud seisund, mida tervishoiutöötaja on hinnanud seoses terviseoleku tekke, kulu, raskuse või mõjuga" URL="/concept/term/professionally assessed condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+22 [label="võimalik seisund" fontname="Cambria" tooltip="tervisehoiu osapoole kirjeldatud võimalik tuleviku või praegune terviseseisund" URL="/concept/term/potential health condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+1 -> 23 [label="teeb kindlaks"; fontname="Cambria"]
+23 -> 19 [label="põhineb"; fontname="Cambria"]
+22 -> 23 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
+}
+`);</script>
+    </div>
+  </body>
+</html>
