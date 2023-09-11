@@ -118,10 +118,10 @@ digraph {
         node [shape=box style=rounded] # Defines the common node specification
         
         # Diagram specific parameters - override any above
-1 [label="tervishoiutöötaja" fontname="Cambria" tooltip="meditsiinipersonali hulka kuuluv isik, kellel on antud jurisdiktsioonis tervishoiutöötajana tegutsemise õigus" URL="/concept/term/healthcare professional" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
-32 [label="välistatud seisund" fontname="Cambria" tooltip="arvesse võetav seisund, mille vähemalt üks tervishoiutöötaja on tuvastanud ja mis ei ole kooskõlas teadaolevate täheldatud seisunditega" URL="/concept/term/excluded condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
-21 [label="täheldatud seisund" fontname="Cambria" tooltip="terviseseisund, mida on täheldanud tervishoiu osapool" URL="/concept/term/observed condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
-25 [label="arvesse võetav seisund" fontname="Cambria" tooltip="võimalik seisund, mida tervishoiu osapool vähemalt ühe täheldatud seisundi põhjal arvesse võtab" URL="/concept/term/considered condition" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+1 [label="tervishoiutöötaja" fontname="Cambria" tooltip="meditsiinipersonali hulka kuuluv isik, kellel on antud jurisdiktsioonis tervishoiutöötajana tegutsemise õigus" URL="/concept/term/healthcare professional.html" color="#9f1fd8" style="filled,rounded" fillcolor="#F3E3FA" ]
+32 [label="välistatud seisund" fontname="Cambria" tooltip="arvesse võetav seisund, mille vähemalt üks tervishoiutöötaja on tuvastanud ja mis ei ole kooskõlas teadaolevate täheldatud seisunditega" URL="/concept/term/excluded condition.html" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+21 [label="täheldatud seisund" fontname="Cambria" tooltip="terviseseisund, mida on täheldanud tervishoiu osapool" URL="/concept/term/observed condition.html" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
+25 [label="arvesse võetav seisund" fontname="Cambria" tooltip="võimalik seisund, mida tervishoiu osapool vähemalt ühe täheldatud seisundi põhjal arvesse võtab" URL="/concept/term/considered condition.html" color="#58d81f" style="filled,rounded" fillcolor="#EAFAE3" ]
 1 -> 32 [label="on välistanud"; fontname="Cambria"]
 32 -> 21 [label="ei ole kooskõlas"; fontname="Cambria"]
 25 -> 32 [arrowtail="onormal" dir="back" color="blue" fontname="Cambria"]
